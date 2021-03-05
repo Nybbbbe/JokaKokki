@@ -1,0 +1,9 @@
+.content-container {
+    width: 100%;
+    padding: 1rem;
+}
+
+.description {
+    text-align: start;
+    margin-top: 1rem;
+}
