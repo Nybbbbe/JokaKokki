@@ -14,6 +14,30 @@
                     "episodeContents": {
                         "id": "pasta1"
                     }
+                },
+                {
+                    "id": "pasta2",
+                    "episodeNumber": "2",
+                    "title": "Pastan keittäminen",
+                    "episodeContents": {
+                        "id": "pasta1"
+                    }
+                },
+                {
+                    "id": "pasta3",
+                    "episodeNumber": "3",
+                    "title": "Bolognese",
+                    "episodeContents": {
+                        "id": "pasta1"
+                    }
+                },
+                {
+                    "id": "pasta4",
+                    "episodeNumber": "4",
+                    "title": "Carbonara",
+                    "episodeContents": {
+                        "id": "pasta1"
+                    }
                 }
             ]
         },
@@ -51,5 +75,11 @@
                 }
             ]
         }
-    ]
+    ],
+    "owned": [],
+    "user": {
+        "name": "Teppo Testaaja",
+        "email": "teppo@testaaja@gmail.com",
+        "freeTrial": true
+    }
 }
