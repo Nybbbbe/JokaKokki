@@ -40,15 +40,23 @@ const Content = () => {
 
     return (
         [
-            <div key="title" className="page-title" onClick={() => handleChange(value + 1)}>
+            <div key="title" className="page-title">
                 <div className="title-left-absolute-icon clickable" onClick={() => history.push('/course:' + episode.parentId)}>
                     <i className="material-icons">arrow_back</i>
                 </div>
                 <h1>{episode.title}</h1>
             </div>,
             <div key="content" className="content-container">
+                <div className="button-container">
+                    {value > 1?
+                        <button type="button" class="btn btn-secondary" onClick={() => handleChange(value - 1)}>Takaisin</button> : <div></div>
+                    }
+                    {value < episodeContent.length?
+                        <button type="button" class="btn btn-primary" onClick={() => handleChange(value + 1)}>Seuraava</button> : <div></div>
+                    }
+                    
+                </div>
                 {episodeContent.map(content => {
-                    console.log(content)
                     return (
                         <TabPanel key={content.id} value={value} index={parseInt(content.pageNumber)}>
                             {content.content[0].src}
