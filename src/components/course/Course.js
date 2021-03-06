@@ -8,6 +8,7 @@ const Course = () => {
     const params = useParams();
     const course = Server.getCourse(params.id.substring(1));
     const episodes = Server.getEpisodes(course.id);
+    const user = Server.getUser();
     const history = useHistory();
 
     return (
@@ -31,7 +32,14 @@ const Course = () => {
                         return (
                         <li key={episode.id} className="list-group-item">
                             <p className="m-0">{"Jakso " + episode.episodeNumber + ": " + episode.title}</p>
-                            <button type="button" className="btn btn-primary" onClick={() => history.push('/course/content:' + episode.id)}>Aloita</button>
+                            <button type="button" className="btn btn-primary" onClick={() => {
+                                if (user.owned.indexOf(course.id) === -1) {
+                                    alert("Et omista kurssia");
+                                } else {
+                                    history.push('/course/content:' + episode.id)
+                                }
+                            }
+                            }>Aloita</button>
                         </li>
                         )
                     })
