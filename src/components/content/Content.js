@@ -50,10 +50,10 @@ const Content = () => {
             <div key="content" className="content-container">
                 <div className="button-container">
                     {value > 1?
-                        <button type="button" class="btn btn-secondary" onClick={() => handleChange(value - 1)}>Takaisin</button> : <div></div>
+                        <button type="button" className="btn btn-secondary" onClick={() => handleChange(value - 1)}>Takaisin</button> : <div></div>
                     }
                     {value < episodeContent.length?
-                        <button type="button" class="btn btn-primary" onClick={() => handleChange(value + 1)}>Seuraava</button> : <div></div>
+                        <button type="button" className="btn btn-primary" onClick={() => handleChange(value + 1)}>Seuraava</button> : <div></div>
                     }
                     
                 </div>
@@ -62,7 +62,7 @@ const Content = () => {
                         <TabPanel key={content.id} value={value} index={parseInt(content.pageNumber)}>
                             {content.content.map((cont) => {
                                 return (
-                                    <ContentContainer type={cont.type} src={cont.src}/>
+                                    <ContentContainer key={cont}type={cont.type} src={cont.src}/>
                                 )
                             })}
                         </TabPanel>
