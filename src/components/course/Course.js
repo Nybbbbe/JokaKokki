@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Server from "../../server";
 import "./Course.css";
 import { useHistory, useParams } from 'react-router-dom';
@@ -10,6 +10,12 @@ const Course = () => {
     const episodes = Server.getEpisodes(course.id);
     const user = Server.getUser();
     const history = useHistory();
+    const [trial, setTrial] = useState(user.freeTrial);
+
+    function endTrial() {
+        Server.setUserTrial(false)
+        setTrial(false)
+    }
 
     return (
         [
@@ -22,7 +28,7 @@ const Course = () => {
         <div key="content" className="content-container">
             <img src={course.img} className="card-img-top" alt=""></img>
             <div className="card-buy-button">
-                <BuyButton course={course}/>
+                <BuyButton course={course} trial={trial} endTrial={endTrial}/>
             </div>
             
             <p className="description">{course.description}</p>

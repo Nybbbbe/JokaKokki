@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Server from "../../server";
 import "./Courses.css";
 import { useHistory } from 'react-router-dom';
@@ -6,7 +6,14 @@ import BuyButton from "../buybutton/BuyButton";
 
 function Courses() {
     const courses = Server.getCourses();
+    const user = Server.getUser();
     const history = useHistory();
+    const [trial, setTrial] = useState(user.freeTrial);
+
+    function endTrial() {
+        Server.setUserTrial(false)
+        setTrial(false)
+    }
 
     return (
         [
@@ -24,7 +31,7 @@ function Courses() {
                             <img src={course.img} className="card-img-top" alt=""></img>
                             <div className="card-body">
                                 <h5 className="card-title">{course.title}</h5>
-                                <BuyButton course={course}/>
+                                <BuyButton course={course} trial={trial} endTrial={endTrial} />
                             </div>
                         </div>
                     )

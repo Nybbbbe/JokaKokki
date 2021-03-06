@@ -2,7 +2,7 @@ import React, { useReducer } from 'react';
 import "./BuyButton.css";
 import Server from "../../server";
 
-function BuyButton({course}) {
+function BuyButton({course, trial, endTrial}) {
     // eslint-disable-next-line no-unused-vars
     const [ignored, forceUpdate] = useReducer(x => x + 1, 0);
 
@@ -19,10 +19,11 @@ function BuyButton({course}) {
                 if (confirmed) {
                     Server.setUserTrial(false); 
                     Server.addOwned(course.id);
+                    endTrial();
                     forceUpdate();
                 }
             }
-            }>{owned ? "Omistettu" : user.freeTrial ?  "Ilmainen" : `${course.price} €` }</button>       
+            }>{owned ? "Omistettu" : trial ?  "Ilmainen" : `${course.price} €` }</button>       
     )
 }
 
