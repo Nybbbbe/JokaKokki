@@ -19,13 +19,13 @@ const Course = () => {
         <div key="content" className="content-container">
             <img src={course.img} className="card-img-top" alt=""></img>
             <p className="description">{course.description}</p>
-            <ul class="list-group">
+            <ul className="list-group">
                 {
                     course.episodes.map(episode => {
                         return (
-                        <li class="list-group-item">
+                        <li key={episode.id} className="list-group-item">
                             <p className="m-0">{"Jakso " + episode.episodeNumber + ": " + episode.title}</p>
-                            <button type="button" class="btn btn-primary">Aloita</button>
+                            <button type="button" className="btn btn-primary">Aloita</button>
                         </li>
                         )
                     })
