@@ -2,17 +2,15 @@
     background-image: linear-gradient(0deg, #00000088 30%, #ff4fff00 120%),
                       url(https://i.pinimg.com/originals/49/c4/36/49c436f1c1af4deb291c67e80de332b2.jpg); 
     height: 100%;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.login-title {
-    margin-bottom: -1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .login-container {
-    margin-top: 60%;
     align-items: center;
     justify-content: center;
 }
@@ -20,8 +18,10 @@
 .btn-green {
     background-color: #6BAA75 !important;
     color: #FFFFFF;
+    font-weight: 600;
 }
 
 .login-text {
     color: #FFFFFF;
+    padding: 1rem;
 }

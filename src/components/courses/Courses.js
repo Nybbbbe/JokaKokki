@@ -19,6 +19,9 @@ function Courses() {
         [
         <div key={"title"} className="page-title">
             <h1>Valitse Kurssi</h1>
+            <div className="title-left-absolute-icon clickable" onClick={() => history.push('/')}>
+                <i className="material-icons">arrow_back</i>
+            </div>
         </div>,
         <div key={"content"} className="grid-container">
             {

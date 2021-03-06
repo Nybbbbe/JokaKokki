@@ -94,7 +94,7 @@
                 {"type": "subtitle", "src":"Title 1"},
                 {"type": "video", "src":"https://www.youtube.com/watch?v=3AAdKl1UYZs"},
                 {"type": "desc", "src":"Step 1. make pasta"},
-                {"type": "timer", "src":"5"},
+                {"type": "timer", "src":"0.2"},
                 {"type": "img", "src":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_2bvGYkDRFLW7YxO7MPsAlJEKaZEATdGZA&usqp=CAU"},
                 {"type": "timer", "src":"5"},
                 {"type": "desc", "src":"Step 2. make more pasta"}
@@ -122,6 +122,32 @@
                 {"type": "img", "src":""},
                 {"type": "timer", "src":""}
             ]
+        }
+    ],
+    "groups": [
+        {
+            "id": "group1",
+            "class": "classics",
+            "title": "Arjen klassikot",
+            "img": ""
+        },
+        {
+            "id": "group2",
+            "class": "brunch",
+            "title": "Brunssit",
+            "img": ""
+        },
+        {
+            "id": "group3",
+            "class": "finedining",
+            "title": "Finedining",
+            "img": ""
+        },
+        {
+            "id": "group4",
+            "class": "sport",
+            "title": "Sporttiruoka",
+            "img": ""
         }
     ]
 }

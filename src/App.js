@@ -8,6 +8,7 @@ import Courses from './components/courses/Courses';
 import Course from './components/course/Course';
 import Content from './components/content/Content';
 import Login from './components/login/Login'
+import Groups from './components/groups/Groups'
 import './App.css';
 
 function App() {
@@ -25,9 +26,12 @@ function App() {
             <Switch>
               <Route exact path="/">
                 { loggedIn
-                  ? <Courses />
+                  ? < Groups/>
                   : <Login userLogin={userLogin} />
                 }
+              </Route>
+              <Route exact path="/courses">
+                <Courses />
               </Route>
               <Route path="/course:id">
                 <Course />
