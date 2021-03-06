@@ -22,25 +22,19 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className="main-container">
-          <Router>
-            <Switch>
-              <Route exact path="/">
-                { loggedIn
-                  ? < Groups/>
-                  : <Login userLogin={userLogin} />
-                }
-              </Route>
-              <Route exact path="/courses">
-                <Courses />
-              </Route>
-              <Route path="/course:id">
-                <Course />
-              </Route>
-              <Route path="/course/content:id">
-                <Content />
-              </Route>
-            </Switch>
-          </Router>
+          { loggedIn
+            ? (
+              <Router>
+                <Switch>
+                  <Route exact path="/" component={Groups}/>
+                  <Route exact path="/courses" component={Courses}/>
+                  <Route path="/course:id" component={Course}/>
+                  <Route path="/course/content:id" component={Content}/>
+                </Switch>
+              </Router>
+            )
+            : <Login userLogin={userLogin} />
+          }
         </div>
       </header>
     </div>
