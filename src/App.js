@@ -4,11 +4,12 @@ import {
   Route
 } from "react-router-dom";
 import React, { useState } from 'react'
-import Courses from './components/courses/Courses';
+//import Courses from './components/courses/Courses';
 import Course from './components/course/Course';
 import Content from './components/content/Content';
-import Login from './components/login/Login'
-import Groups from './components/groups/Groups'
+import Login from './components/login/Login';
+import Groups from './components/groups/Groups';
+import CoursesByGroup from './components/courses/CoursesByGroup';
 import './App.css';
 
 function App() {
@@ -27,7 +28,8 @@ function App() {
               <Router>
                 <Switch>
                   <Route exact path="/" component={Groups}/>
-                  <Route exact path="/courses" component={Courses}/>
+                  {/* <Route exact path="/courses" component={Courses}/> */}
+                  <Route exact path="/courses:group" component={CoursesByGroup}/>
                   <Route path="/course:id" component={Course}/>
                   <Route path="/course/content:id" component={Content}/>
                 </Switch>

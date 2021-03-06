@@ -9,6 +9,14 @@ class Server {
         return db.courses.find(course => course.id === id);
     }
 
+    static getCoursesByGroup = (group) => {
+        const courses = [];
+        db.courses.forEach(course => {
+            if (course.classifications.includes(group)) courses.push(course)
+        });
+        return courses;
+    }
+
     static getEpisode = (id) => {
         return db.episodes.find(episoded => episoded.id === id);
     }

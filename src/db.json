@@ -10,19 +10,19 @@
         },
         {
             "id": "2",
-            "title": "Pasta ruokien alkeet 2",
+            "title": "Salaattien salat",
             "price": "2.99",
             "description": "Tällä kursilla opit tekemään tuorepasta ruokia aivan nollasta. Kurssi lähtee käyntiin tuorepastan taikinan teosta ja jatkuu sitten pasta ruokien tekoon kuten carbonara ja bolognese. Tämän kurssiin jälkeen tulet olemaan oikea mestari pasta kokki!",
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_2bvGYkDRFLW7YxO7MPsAlJEKaZEATdGZA&usqp=CAU",
-            "classifications": []
+            "classifications": ["sport"]
         },
         {
             "id": "3",
-            "title": "Pasta ruokien alkeet 3",
+            "title": "Viinit ruoassa",
             "price": "2.99",
             "description": "Tällä kursilla opit tekemään tuorepasta ruokia aivan nollasta. Kurssi lähtee käyntiin tuorepastan taikinan teosta ja jatkuu sitten pasta ruokien tekoon kuten carbonara ja bolognese. Tämän kurssiin jälkeen tulet olemaan oikea mestari pasta kokki!",
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_2bvGYkDRFLW7YxO7MPsAlJEKaZEATdGZA&usqp=CAU",
-            "classifications": []
+            "classifications": ["finedining"]
         }
     ],
     
@@ -135,19 +135,19 @@
             "id": "group2",
             "class": "brunch",
             "title": "Brunssit",
-            "img": "https://cdn.valio.fi/mediafiles/bb6a04fc-bd3e-4c69-b069-58a95eaeb446/716x462-recipe-highlight"
+            "img": "https://bigseventravel.com/wp-content/uploads/2019/12/Loop.jpg"
         },
         {
             "id": "group3",
             "class": "finedining",
             "title": "Finedining",
-            "img": "https://cdn.valio.fi/mediafiles/bb6a04fc-bd3e-4c69-b069-58a95eaeb446/716x462-recipe-highlight"
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVLtgeBioYOK8EHjhUZ4VFPxXx114DYCBECQ&usqp=CAU"
         },
         {
             "id": "group4",
             "class": "sport",
             "title": "Sporttiruoka",
-            "img": "https://cdn.valio.fi/mediafiles/bb6a04fc-bd3e-4c69-b069-58a95eaeb446/716x462-recipe-highlight"
-        }
+            "img": "https://www.esticastresearch.com/wp-content/uploads/2020/03/sports-nutrition-Market.jpg"        }
     ]
 }
+
