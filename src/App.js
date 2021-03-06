@@ -3,12 +3,20 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import React, { useState } from 'react'
 import Courses from './components/courses/Courses';
 import Course from './components/course/Course';
 import Content from './components/content/Content';
+import Login from './components/login/Login'
 import './App.css';
 
 function App() {
+  const [loggedIn, setLoggedIn] = useState(false)
+
+  function userLogin() {
+    setLoggedIn(true)
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -16,7 +24,10 @@ function App() {
           <Router>
             <Switch>
               <Route exact path="/">
-                <Courses />
+                { loggedIn
+                  ? <Courses />
+                  : <Login userLogin={userLogin} />
+                }
               </Route>
               <Route path="/course:id">
                 <Course />
