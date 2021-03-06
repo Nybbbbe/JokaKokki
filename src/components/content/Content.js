@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import Server from "../../server";
 import "./Content.css";
 import { useHistory, useParams } from 'react-router-dom';
+import Video from './Video';
+import Image from './Image';
+import ContentContainer from './ContentContainer';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -59,10 +62,15 @@ const Content = () => {
                 {episodeContent.map(content => {
                     return (
                         <TabPanel key={content.id} value={value} index={parseInt(content.pageNumber)}>
-                            {content.content[0].src}
+                            {content.content.map((cont) => {
+                                return (
+                                    <ContentContainer type={cont.type} src={cont.src}/>
+                                )
+                            })}
                         </TabPanel>
                     )
                 })}
+
             </div>
         ]
     )

@@ -89,9 +89,9 @@
             "pageNumber": "1",
             "content": [
                 {"type": "subtitle", "src":"Title 1"},
-                {"type": "video", "src":""},
-                {"type": "desc", "src":""},
-                {"type": "img", "src":""},
+                {"type": "video", "src":"https://www.youtube.com/watch?v=3AAdKl1UYZs"},
+                {"type": "desc", "src":"Step 1. make pasta"},
+                {"type": "img", "src":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_2bvGYkDRFLW7YxO7MPsAlJEKaZEATdGZA&usqp=CAU"},
                 {"type": "timer", "src":""}
             ]
         },
@@ -101,7 +101,7 @@
             "pageNumber": "2",
             "content": [
                 {"type": "subtitle", "src":"Title 2"},
-                {"type": "video", "src":""},
+                {"type": "video", "src":"https://www.youtube.com/watch?v=D_2DBLAt57c"},
                 {"type": "desc", "src":""},
                 {"type": "img", "src":""},
                 {"type": "timer", "src":""}
