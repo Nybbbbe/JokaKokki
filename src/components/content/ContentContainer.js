@@ -3,6 +3,7 @@ import Description from './Description';
 import Image from './Image';
 import SubTitle from './SubTitle';
 import Video from './Video';
+import Timer from './Timer';
 
 function ContentContainer({type, src}) {
     switch (type) {
@@ -16,8 +17,7 @@ function ContentContainer({type, src}) {
             return <Image src={src}/>
         }
         case "timer": {
-            // Placeholder
-            return <Description src={"insert timer here"}/>
+            return <Timer src={src}/>
         }
         case "subtitle": {
             

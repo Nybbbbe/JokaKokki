@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import Server from "../../server";
 import "./Content.css";
 import { useHistory, useParams } from 'react-router-dom';
-import Video from './Video';
-import Image from './Image';
 import ContentContainer from './ContentContainer';
 
 function TabPanel(props) {

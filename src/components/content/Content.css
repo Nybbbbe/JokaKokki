@@ -4,3 +4,12 @@
     flex-direction: row;
     justify-content: space-between;
 }
+.timer {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timer .material-icons {
+    font-size: 48px;
+}
