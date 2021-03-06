@@ -129,25 +129,25 @@
             "id": "group1",
             "class": "classics",
             "title": "Arjen klassikot",
-            "img": ""
+            "img": "https://cdn.valio.fi/mediafiles/bb6a04fc-bd3e-4c69-b069-58a95eaeb446/716x462-recipe-highlight"
         },
         {
             "id": "group2",
             "class": "brunch",
             "title": "Brunssit",
-            "img": ""
+            "img": "https://cdn.valio.fi/mediafiles/bb6a04fc-bd3e-4c69-b069-58a95eaeb446/716x462-recipe-highlight"
         },
         {
             "id": "group3",
             "class": "finedining",
             "title": "Finedining",
-            "img": ""
+            "img": "https://cdn.valio.fi/mediafiles/bb6a04fc-bd3e-4c69-b069-58a95eaeb446/716x462-recipe-highlight"
         },
         {
             "id": "group4",
             "class": "sport",
             "title": "Sporttiruoka",
-            "img": ""
+            "img": "https://cdn.valio.fi/mediafiles/bb6a04fc-bd3e-4c69-b069-58a95eaeb446/716x462-recipe-highlight"
         }
     ]
 }

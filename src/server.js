@@ -43,6 +43,10 @@ class Server {
         }
     }
 
+    static getGroups = () => {
+        return db.groups;
+    }
+
 }
 
 export default Server;
