@@ -24,12 +24,8 @@
   font-size: calc(10px + 2vmin);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 .main-container {
-  background-color: white;
+  background-color: #f2f2f2;;
   width: 600px;
   height: 100%;
   overflow: auto;

@@ -5,21 +5,24 @@
             "title": "Pasta ruokien alkeet",
             "price": "2.99",
             "description": "Tällä kursilla opit tekemään tuorepasta ruokia aivan nollasta. Kurssi lähtee käyntiin tuorepastan taikinan teosta ja jatkuu sitten pasta ruokien tekoon kuten carbonara ja bolognese. Tämän kurssiin jälkeen tulet olemaan oikea mestari pasta kokki!",
-            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_2bvGYkDRFLW7YxO7MPsAlJEKaZEATdGZA&usqp=CAU"
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_2bvGYkDRFLW7YxO7MPsAlJEKaZEATdGZA&usqp=CAU",
+            "classifications": ["classics"]
         },
         {
             "id": "2",
             "title": "Pasta ruokien alkeet 2",
             "price": "2.99",
             "description": "Tällä kursilla opit tekemään tuorepasta ruokia aivan nollasta. Kurssi lähtee käyntiin tuorepastan taikinan teosta ja jatkuu sitten pasta ruokien tekoon kuten carbonara ja bolognese. Tämän kurssiin jälkeen tulet olemaan oikea mestari pasta kokki!",
-            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_2bvGYkDRFLW7YxO7MPsAlJEKaZEATdGZA&usqp=CAU"
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_2bvGYkDRFLW7YxO7MPsAlJEKaZEATdGZA&usqp=CAU",
+            "classifications": []
         },
         {
             "id": "3",
             "title": "Pasta ruokien alkeet 3",
             "price": "2.99",
             "description": "Tällä kursilla opit tekemään tuorepasta ruokia aivan nollasta. Kurssi lähtee käyntiin tuorepastan taikinan teosta ja jatkuu sitten pasta ruokien tekoon kuten carbonara ja bolognese. Tämän kurssiin jälkeen tulet olemaan oikea mestari pasta kokki!",
-            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_2bvGYkDRFLW7YxO7MPsAlJEKaZEATdGZA&usqp=CAU"
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_2bvGYkDRFLW7YxO7MPsAlJEKaZEATdGZA&usqp=CAU",
+            "classifications": []
         }
     ],
     
@@ -92,7 +95,8 @@
                 {"type": "video", "src":"https://www.youtube.com/watch?v=3AAdKl1UYZs"},
                 {"type": "desc", "src":"Step 1. make pasta"},
                 {"type": "img", "src":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_2bvGYkDRFLW7YxO7MPsAlJEKaZEATdGZA&usqp=CAU"},
-                {"type": "timer", "src":""}
+                {"type": "timer", "src":"5"},
+                {"type": "desc", "src":"Step 2. make more pasta"}
             ]
         },
         {

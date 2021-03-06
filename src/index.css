@@ -25,8 +25,11 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #6BAA75;
+  color: #ffffff;
   box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.35);
   box-sizing: content-box;
+  margin-bottom: 1rem;
 }
 
 .page-title h1 {
