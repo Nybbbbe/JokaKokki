@@ -1,99 +1,25 @@
 {
     "courses": [
         {
-            "id": 1,
+            "id": "1",
             "title": "Pasta ruokien alkeet",
-            "price": 2.99,
+            "price": "2.99",
             "description": "Tällä kursilla opit tekemään tuorepasta ruokia aivan nollasta. Kurssi lähtee käyntiin tuorepastan taikinan teosta ja jatkuu sitten pasta ruokien tekoon kuten carbonara ja bolognese. Tämän kurssiin jälkeen tulet olemaan oikea mestari pasta kokki!",
-            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_2bvGYkDRFLW7YxO7MPsAlJEKaZEATdGZA&usqp=CAU",
-            "episodes": [
-                {
-                    "id": "pasta1",
-                    "episodeNumber": "1",
-                    "title": "Pasta taikina",
-                    "episodeContents": [
-                        {
-                            "id": "pasta1page1",
-                            "pageNumber": 1,
-                            "content": [
-                                {"type": "subtitle", "src":""},
-                                {"type": "video", "src":""},
-                                {"type": "desc", "src":""},
-                                {"type": "img", "src":""},
-                                {"type": "timer", "src":""}
-                            ]
-                        },
-                        {
-                            "id": "pasta1page2",
-                            "pageNumber": 2,
-                            "content": [
-                                {"type": "video", "src":""},
-                                {"type": "desc", "src":""},
-                                {"type": "img", "src":""},
-                                {"type": "timer", "src":""}
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "pasta2",
-                    "episodeNumber": "2",
-                    "title": "Pastan keittäminen",
-                    "episodeContents": {
-                        "id": "pasta1"
-                    }
-                },
-                {
-                    "id": "pasta3",
-                    "episodeNumber": "3",
-                    "title": "Bolognese",
-                    "episodeContents": {
-                        "id": "pasta1"
-                    }
-                },
-                {
-                    "id": "pasta4",
-                    "episodeNumber": "4",
-                    "title": "Carbonara",
-                    "episodeContents": {
-                        "id": "pasta1"
-                    }
-                }
-            ]
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_2bvGYkDRFLW7YxO7MPsAlJEKaZEATdGZA&usqp=CAU"
         },
         {
-            "id": 2,
+            "id": "2",
             "title": "Pasta ruokien alkeet 2",
-            "price": 2.99,
+            "price": "2.99",
             "description": "Tällä kursilla opit tekemään tuorepasta ruokia aivan nollasta. Kurssi lähtee käyntiin tuorepastan taikinan teosta ja jatkuu sitten pasta ruokien tekoon kuten carbonara ja bolognese. Tämän kurssiin jälkeen tulet olemaan oikea mestari pasta kokki!",
-            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_2bvGYkDRFLW7YxO7MPsAlJEKaZEATdGZA&usqp=CAU",
-            "episodes": [
-                {
-                    "id": "pasta1",
-                    "episodeNumber": "1",
-                    "title": "Pasta taikina",
-                    "episodeContents": {
-                        "id": "pasta1"
-                    }
-                }
-            ]
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_2bvGYkDRFLW7YxO7MPsAlJEKaZEATdGZA&usqp=CAU"
         },
         {
-            "id": 3,
+            "id": "3",
             "title": "Pasta ruokien alkeet 3",
-            "price": 2.99,
+            "price": "2.99",
             "description": "Tällä kursilla opit tekemään tuorepasta ruokia aivan nollasta. Kurssi lähtee käyntiin tuorepastan taikinan teosta ja jatkuu sitten pasta ruokien tekoon kuten carbonara ja bolognese. Tämän kurssiin jälkeen tulet olemaan oikea mestari pasta kokki!",
-            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_2bvGYkDRFLW7YxO7MPsAlJEKaZEATdGZA&usqp=CAU",
-            "episodes": [
-                {
-                    "id": "pasta1",
-                    "episodeNumber": "1",
-                    "title": "Pasta taikina",
-                    "episodeContents": {
-                        "id": "pasta1"
-                    }
-                }
-            ]
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_2bvGYkDRFLW7YxO7MPsAlJEKaZEATdGZA&usqp=CAU"
         }
     ],
     "owned": [],
@@ -101,5 +27,83 @@
         "name": "Teppo Testaaja",
         "email": "teppo@testaaja@gmail.com",
         "freeTrial": true
-    }
+    },
+    "episodes": [
+        {
+            "id": "pasta1",
+            "parentId": "1",
+            "episodeNumber": "1",
+            "title": "Pasta taikina"
+        },
+        {
+            "id": "pasta2",
+            "parentId": "1",
+            "episodeNumber": "2",
+            "title": "Pastan keittäminen",
+            "episodeContents": {
+                "id": "pasta1"
+            }
+        },
+        {
+            "id": "pasta3",
+            "parentId": "1",
+            "episodeNumber": "3",
+            "title": "Bolognese",
+            "episodeContents": {
+                "id": "pasta1"
+            }
+        },
+        {
+            "id": "pasta4",
+            "parentId": "1",
+            "episodeNumber": "4",
+            "title": "Carbonara",
+            "episodeContents": {
+                "id": "pasta1"
+            }
+        },
+        {
+            "id": "pasta1",
+            "parentId": "2",
+            "episodeNumber": "1",
+            "title": "Pasta taikina",
+            "episodeContents": {
+                "id": "pasta1"
+            }
+        },
+        {
+            "id": "pasta1",
+            "parentId": "3",
+            "episodeNumber": "1",
+            "title": "Pasta taikina",
+            "episodeContents": {
+                "id": "pasta1"
+            }
+        }
+    ],
+    "episodeContents": [
+        {
+            "id": "pasta1page1",
+            "parentId": "pasta1",
+            "pageNumber": "1",
+            "content": [
+                {"type": "subtitle", "src":""},
+                {"type": "video", "src":""},
+                {"type": "desc", "src":""},
+                {"type": "img", "src":""},
+                {"type": "timer", "src":""}
+            ]
+        },
+        {
+            "id": "pasta1page2",
+            "parentId": "pasta1",
+            "pageNumber": "2",
+            "content": [
+                {"type": "video", "src":""},
+                {"type": "desc", "src":""},
+                {"type": "img", "src":""},
+                {"type": "timer", "src":""}
+            ]
+        }
+    ]
 }

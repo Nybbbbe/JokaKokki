@@ -5,7 +5,8 @@ import { useHistory, useParams } from 'react-router-dom';
 
 const Course = () => {
     const params = useParams();
-    const course = Server.getCourse(parseInt(params.id.substring(1)));
+    const course = Server.getCourse(params.id.substring(1));
+    const episodes = Server.getEpisodes(course.id);
     const history = useHistory();
 
     return (
@@ -21,7 +22,7 @@ const Course = () => {
             <p className="description">{course.description}</p>
             <ul className="list-group">
                 {
-                    course.episodes.map(episode => {
+                    episodes.map(episode => {
                         return (
                         <li key={episode.id} className="list-group-item">
                             <p className="m-0">{"Jakso " + episode.episodeNumber + ": " + episode.title}</p>
