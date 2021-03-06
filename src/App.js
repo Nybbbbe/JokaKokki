@@ -42,7 +42,7 @@ function App() {
                           >
                             <BottomNavigationAction label="Classic" value="/courses:classics" icon={<MenuBookIcon />} component={Link} to="/courses:classics"  />
                             <BottomNavigationAction label="Home" value="/" icon={<HomeIcon />} component={Link} to="/" />
-                            <BottomNavigationAction label="Profile" icon={<AccountCircleIcon />} />
+                            <BottomNavigationAction label="Profile" value="/profile" icon={<AccountCircleIcon />} component={Link} to="/profile" />
                           </BottomNavigation>
                       )}
                     />
