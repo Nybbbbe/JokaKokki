@@ -88,7 +88,7 @@
             "parentId": "pasta1",
             "pageNumber": "1",
             "content": [
-                {"type": "subtitle", "src":""},
+                {"type": "subtitle", "src":"Title 1"},
                 {"type": "video", "src":""},
                 {"type": "desc", "src":""},
                 {"type": "img", "src":""},
@@ -100,6 +100,7 @@
             "parentId": "pasta1",
             "pageNumber": "2",
             "content": [
+                {"type": "subtitle", "src":"Title 2"},
                 {"type": "video", "src":""},
                 {"type": "desc", "src":""},
                 {"type": "img", "src":""},

@@ -21,6 +21,14 @@ class Server {
         return episodes;
     }
 
+    static getEpisodeContent = (id) => {
+        const episodeContents = [];
+        db.episodeContents.forEach(episode => {
+            if (episode.parentId === id) episodeContents.push(episode)
+        });
+        return episodeContents;
+    }
+
     static getUser = () => {
         return db.user;
     }

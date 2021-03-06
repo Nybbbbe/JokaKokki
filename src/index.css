@@ -33,6 +33,12 @@ code {
   margin: 0;
 }
 
+.content-container {
+  width: 100%;
+  padding: 1rem;
+  overflow: auto;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 50% 50%;
