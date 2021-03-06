@@ -38,11 +38,11 @@ function App() {
                       render={(history) => (
                           <BottomNavigation
                             value={history.location.pathname}
-                            style={{ position: 'fixed', bottom: '0', width: '600px' }}
+                            style={{ position: 'absolute', bottom: '0', width: '100%', maxWidth: '600px'}}
                           >
-                            <BottomNavigationAction label="Home" value="/" icon={<HomeIcon />} component={Link} to="/" />
                             <BottomNavigationAction label="Classic" value="/courses:classics" icon={<MenuBookIcon />} component={Link} to="/courses:classics"  />
-                            <BottomNavigationAction label="Sport" value="/courses:sport" icon={<AccountCircleIcon />} component={Link} to="/courses:sport"  />
+                            <BottomNavigationAction label="Home" value="/" icon={<HomeIcon />} component={Link} to="/" />
+                            <BottomNavigationAction label="Profile" icon={<AccountCircleIcon />} />
                           </BottomNavigation>
                       )}
                     />
