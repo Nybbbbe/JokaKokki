@@ -9,6 +9,10 @@ class Server {
         return db.courses.find(course => course.id === id);
     }
 
+    static getEpisode = (id) => {
+        return db.episodes.find(episoded => episoded.id === id);
+    }
+
     static getEpisodes = (id) => {
         const episodes = [];
         db.episodes.forEach(episode => {

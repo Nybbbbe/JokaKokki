@@ -26,7 +26,7 @@ const Course = () => {
                         return (
                         <li key={episode.id} className="list-group-item">
                             <p className="m-0">{"Jakso " + episode.episodeNumber + ": " + episode.title}</p>
-                            <button type="button" className="btn btn-primary">Aloita</button>
+                            <button type="button" className="btn btn-primary" onClick={() => history.push('/course/content:' + episode.id)}>Aloita</button>
                         </li>
                         )
                     })

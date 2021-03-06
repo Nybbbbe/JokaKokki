@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import Courses from './components/courses/Courses';
 import Course from './components/course/Course';
+import Content from './components/content/Content';
 import './App.css';
 
 function App() {
@@ -19,6 +20,9 @@ function App() {
               </Route>
               <Route path="/course:id">
                 <Course />
+              </Route>
+              <Route path="/course/content:id">
+                <Content />
               </Route>
             </Switch>
           </Router>
