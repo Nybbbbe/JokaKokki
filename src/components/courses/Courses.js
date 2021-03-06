@@ -2,6 +2,7 @@ import React from 'react';
 import Server from "../../server";
 import "./Courses.css";
 import { useHistory } from 'react-router-dom';
+import BuyButton from "../buybutton/BuyButton";
 
 function Courses() {
     const courses = Server.getCourses();
@@ -16,10 +17,14 @@ function Courses() {
             {
                 courses.map((course) => {
                     return (
-                        <div key={course.id} onClick={() => history.push('/course:' + course.id)} className="card clickable">
+                        <div key={course.id} onClick={(e) => {
+                            e.stopPropagation();
+                            history.push('/course:' + course.id)}
+                            } className="card clickable">
                             <img src={course.img} className="card-img-top" alt=""></img>
                             <div className="card-body">
                                 <h5 className="card-title">{course.title}</h5>
+                                <BuyButton course={course}/>
                             </div>
                         </div>
                     )

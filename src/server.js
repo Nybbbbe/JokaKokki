@@ -20,6 +20,21 @@ class Server {
         });
         return episodes;
     }
+
+    static getUser = () => {
+        return db.user;
+    }
+
+    static setUserTrial = (value) => {
+        db.user.freeTrial = value;
+    }
+
+    static addOwned = (value) => {
+        if (db.user.owned.indexOf(value) === -1) {
+            db.user.owned.push(value);
+        }
+    }
+
 }
 
 export default Server;

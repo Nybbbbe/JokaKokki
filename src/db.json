@@ -22,11 +22,12 @@
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_2bvGYkDRFLW7YxO7MPsAlJEKaZEATdGZA&usqp=CAU"
         }
     ],
-    "owned": [],
+    
     "user": {
         "name": "Teppo Testaaja",
         "email": "teppo@testaaja@gmail.com",
-        "freeTrial": true
+        "freeTrial": true,
+        "owned": []
     },
     "episodes": [
         {

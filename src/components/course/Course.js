@@ -2,6 +2,7 @@ import React from 'react';
 import Server from "../../server";
 import "./Course.css";
 import { useHistory, useParams } from 'react-router-dom';
+import BuyButton from '../buybutton/BuyButton';
 
 const Course = () => {
     const params = useParams();
@@ -19,6 +20,10 @@ const Course = () => {
         </div>,
         <div key="content" className="content-container">
             <img src={course.img} className="card-img-top" alt=""></img>
+            <div className="card-buy-button">
+                <BuyButton course={course}/>
+            </div>
+            
             <p className="description">{course.description}</p>
             <ul className="list-group">
                 {
