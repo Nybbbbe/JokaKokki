@@ -11,9 +11,29 @@
                     "id": "pasta1",
                     "episodeNumber": "1",
                     "title": "Pasta taikina",
-                    "episodeContents": {
-                        "id": "pasta1"
-                    }
+                    "episodeContents": [
+                        {
+                            "id": "pasta1page1",
+                            "pageNumber": 1,
+                            "content": [
+                                {"type": "subtitle", "src":""},
+                                {"type": "video", "src":""},
+                                {"type": "desc", "src":""},
+                                {"type": "img", "src":""},
+                                {"type": "timer", "src":""}
+                            ]
+                        },
+                        {
+                            "id": "pasta1page2",
+                            "pageNumber": 2,
+                            "content": [
+                                {"type": "video", "src":""},
+                                {"type": "desc", "src":""},
+                                {"type": "img", "src":""},
+                                {"type": "timer", "src":""}
+                            ]
+                        }
+                    ]
                 },
                 {
                     "id": "pasta2",

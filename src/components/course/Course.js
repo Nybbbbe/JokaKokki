@@ -11,7 +11,7 @@ const Course = () => {
     return (
         [
         <div key="title" className="page-title">
-            <div className="title-left-absolute-icon" onClick={() => history.push('/')}>
+            <div className="title-left-absolute-icon clickable" onClick={() => history.push('/')}>
                 <i className="material-icons">arrow_back</i>
             </div>
             <h1>{course.title}</h1>
@@ -24,7 +24,7 @@ const Course = () => {
                     course.episodes.map(episode => {
                         return (
                         <li class="list-group-item">
-                            <p className="m-0">{episode.episodeNumber + ": " + episode.title}</p>
+                            <p className="m-0">{"Jakso " + episode.episodeNumber + ": " + episode.title}</p>
                             <button type="button" class="btn btn-primary">Aloita</button>
                         </li>
                         )
