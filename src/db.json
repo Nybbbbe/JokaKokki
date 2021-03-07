@@ -30,7 +30,8 @@
         "name": "Teppo Testaaja",
         "email": "teppo@testaaja@gmail.com",
         "freeTrial": true,
-        "owned": []
+        "owned": [],
+        "img": "https://dysismedical.com/wp-content/uploads/2015/02/anonymous-person.png"
     },
     "episodes": [
         {
