@@ -42,7 +42,7 @@ const Content = () => {
     return (
         <>
             <div key="title" className="page-title">
-                <div className="title-left-absolute-icon clickable" onClick={() => history.push('/course:' + episode.parentId)}>
+                <div className="title-left-absolute-icon clickable" onClick={() => history.goBack()}>
                     <i className="material-icons">arrow_back</i>
                 </div>
                 <h1>{episode.title}</h1>
@@ -60,12 +60,14 @@ const Content = () => {
                     )
                 })}
             </div>
+
             <div className="button-container">
                 {value > 1?
-                    <button type="button" className="btn btn-secondary" onClick={() => handleChange(value - 1)}>Takaisin</button> : <div></div>
+                    <button type="button" className="btn btn-secondary left-btn" onClick={() => handleChange(value - 1)}>Takaisin</button> : <div></div>
                 }
+                <span className="page-num-text">{"Sivu: " + value + " / " + episodeContent.length}</span>
                 {value < episodeContent.length?
-                    <button type="button" className="btn btn-primary" onClick={() => handleChange(value + 1)}>Seuraava</button> : <div></div>
+                    <button type="button" className="btn btn-primary right-btn" onClick={() => handleChange(value + 1)}>Seuraava</button> : <div></div>
                 }
             </div>
         </>

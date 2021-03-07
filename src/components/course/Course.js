@@ -20,7 +20,7 @@ const Course = () => {
     return (
         [
         <div key="title" className="page-title">
-            <div className="title-left-absolute-icon clickable" onClick={() => history.push('/')}>
+            <div className="title-left-absolute-icon clickable" onClick={() => history.goBack()}>
                 <i className="material-icons">arrow_back</i>
             </div>
             <h1>{course.title}</h1>

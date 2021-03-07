@@ -17,6 +17,14 @@ class Server {
         return courses;
     }
 
+    static getMyCourses = () => {
+        const courses = [];
+        db.courses.forEach(course => {
+            if (db.user.owned.includes(course.id)) courses.push(course)
+        });
+        return courses;
+    }
+
     static getEpisode = (id) => {
         return db.episodes.find(episoded => episoded.id === id);
     }

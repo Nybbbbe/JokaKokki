@@ -8,14 +8,16 @@ import React, { useState } from 'react'
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import HomeIcon from '@material-ui/icons/Home';
-import MenuBookIcon from '@material-ui/icons/MenuBook';
+// import MenuBookIcon from '@material-ui/icons/MenuBook';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import CategoryIcon from "@material-ui/icons/Category";
 //import Courses from './components/courses/Courses';
 import Course from './components/course/Course';
 import Content from './components/content/Content';
 import Login from './components/login/Login';
 import Groups from './components/groups/Groups';
 import CoursesByGroup from './components/courses/CoursesByGroup';
+import CoursesOwned from './components/courses/CoursesOwned';
 import './App.css';
 
 function App() {
@@ -37,6 +39,7 @@ function App() {
                         <Switch>
                           <Route exact path="/" component={Groups}/>
                           {/* <Route exact path="/courses" component={Courses}/> */}
+                          <Route exact path="/mycourses" component={CoursesOwned}/>
                           <Route exact path="/courses:group" component={CoursesByGroup}/>
                           <Route path="/course:id" component={Course}/>
                           <Route path="/course/content:id" component={Content}/>
@@ -48,9 +51,9 @@ function App() {
                             <BottomNavigation
                               value={history.location.pathname}
                             >
-                              <BottomNavigationAction label="Classic" value="/courses:classics" icon={<MenuBookIcon />} component={Link} to="/courses:classics"  />
-                              <BottomNavigationAction label="Home" value="/" icon={<HomeIcon />} component={Link} to="/" />
-                              <BottomNavigationAction label="Profile" value="/profile" icon={<AccountCircleIcon />} component={Link} to="/profile" />
+                              <BottomNavigationAction label="Kategoriat" value="/" icon={<CategoryIcon />} component={Link} to="/"  />
+                              <BottomNavigationAction label="Omat Kurssit" value="/mycourses" icon={<HomeIcon />} component={Link} to="/mycourses" />
+                              <BottomNavigationAction label="Profiili" value="/profile" icon={<AccountCircleIcon />} component={Link} to="/profile" />
                             </BottomNavigation>
                         )}
                       />
