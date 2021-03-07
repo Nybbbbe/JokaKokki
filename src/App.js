@@ -33,26 +33,27 @@ function App() {
             ? (
                 <>
                   <Router>
-                    <Route
-                      path="/"
-                      render={(history) => (
-                          <BottomNavigation
-                            value={history.location.pathname}
-                            style={{ position: 'absolute', bottom: '0', width: '100%', maxWidth: '600px'}}
-                          >
-                            <BottomNavigationAction label="Classic" value="/courses:classics" icon={<MenuBookIcon />} component={Link} to="/courses:classics"  />
-                            <BottomNavigationAction label="Home" value="/" icon={<HomeIcon />} component={Link} to="/" />
-                            <BottomNavigationAction label="Profile" value="/profile" icon={<AccountCircleIcon />} component={Link} to="/profile" />
-                          </BottomNavigation>
-                      )}
-                    />
-                    <Switch>
-                      <Route exact path="/" component={Groups}/>
-                      {/* <Route exact path="/courses" component={Courses}/> */}
-                      <Route exact path="/courses:group" component={CoursesByGroup}/>
-                      <Route path="/course:id" component={Course}/>
-                      <Route path="/course/content:id" component={Content}/>
-                    </Switch>
+                      <div className="main-content-container">
+                        <Switch>
+                          <Route exact path="/" component={Groups}/>
+                          {/* <Route exact path="/courses" component={Courses}/> */}
+                          <Route exact path="/courses:group" component={CoursesByGroup}/>
+                          <Route path="/course:id" component={Course}/>
+                          <Route path="/course/content:id" component={Content}/>
+                        </Switch>
+                      </div>
+                      <Route
+                        path="/"
+                        render={(history) => (
+                            <BottomNavigation
+                              value={history.location.pathname}
+                            >
+                              <BottomNavigationAction label="Classic" value="/courses:classics" icon={<MenuBookIcon />} component={Link} to="/courses:classics"  />
+                              <BottomNavigationAction label="Home" value="/" icon={<HomeIcon />} component={Link} to="/" />
+                              <BottomNavigationAction label="Profile" value="/profile" icon={<AccountCircleIcon />} component={Link} to="/profile" />
+                            </BottomNavigation>
+                        )}
+                      />
                   </Router>
                 </>
               )

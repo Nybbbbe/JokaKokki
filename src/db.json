@@ -93,11 +93,11 @@
             "content": [
                 {"type": "subtitle", "src":"Title 1"},
                 {"type": "video", "src":"https://www.youtube.com/watch?v=3AAdKl1UYZs"},
-                {"type": "desc", "src":"Step 1. make pasta"},
+                {"type": "desc", "src":"Ohje 1"},
                 {"type": "timer", "src":"0.2"},
                 {"type": "img", "src":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_2bvGYkDRFLW7YxO7MPsAlJEKaZEATdGZA&usqp=CAU"},
                 {"type": "timer", "src":"5"},
-                {"type": "desc", "src":"Step 2. make more pasta"}
+                {"type": "desc", "src":"Ohje 2"}
             ]
         },
         {

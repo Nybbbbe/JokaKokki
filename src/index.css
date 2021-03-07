@@ -29,7 +29,7 @@ code {
   color: #ffffff;
   box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.35);
   box-sizing: content-box;
-  margin-bottom: 1rem;
+  z-index: 10;
 }
 
 .page-title h1 {
@@ -39,6 +39,7 @@ code {
 .content-container {
   width: 100%;
   padding: 1rem;
+  height: 100%;
   overflow: auto;
 }
 
@@ -48,7 +49,7 @@ code {
 }
 
 .card {
-  margin: 0.5rem;
+  margin: 1rem;
 }
 
 .clickable {
@@ -65,6 +66,14 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.component-content-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+  padding: 1rem 0;
 }
 
 @media only screen and (max-width: 400px) {

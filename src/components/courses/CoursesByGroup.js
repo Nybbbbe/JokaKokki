@@ -17,14 +17,15 @@ function CoursesByGroup() {
     }
 
     return (
-        [
-        <div key={"title"} className="page-title">
+        <>
+        <div className="page-title">
             <h1>Valitse Kurssi</h1>
             <div className="title-left-absolute-icon clickable" onClick={() => history.push('/')}>
                 <i className="material-icons">arrow_back</i>
             </div>
-        </div>,
-        <div key={"content"} className="grid-container">
+        </div>
+        <div class="component-content-container">
+        <div className="grid-container">
             {
                 courses.map((course) => {
                     return (
@@ -42,7 +43,8 @@ function CoursesByGroup() {
                 })
             }
         </div>
-        ]
+        </div>
+        </>
     )
 }
 

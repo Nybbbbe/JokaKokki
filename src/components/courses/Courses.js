@@ -16,32 +16,34 @@ function Courses() {
     }
 
     return (
-        [
-        <div key={"title"} className="page-title">
+        <>
+        <div className="page-title">
             <h1>Valitse Kurssi</h1>
             <div className="title-left-absolute-icon clickable" onClick={() => history.push('/')}>
                 <i className="material-icons">arrow_back</i>
             </div>
-        </div>,
-        <div key={"content"} className="grid-container">
-            {
-                courses.map((course) => {
-                    return (
-                        <div key={course.id} onClick={(e) => {
-                            e.stopPropagation();
-                            history.push('/course:' + course.id)}
-                            } className="card clickable">
-                            <img src={course.img} className="card-img-top" alt=""></img>
-                            <div className="card-body">
-                                <h5 className="card-title">{course.title}</h5>
-                                <BuyButton course={course} trial={trial} endTrial={endTrial} />
-                            </div>
-                        </div>
-                    )
-                })
-            }
         </div>
-        ]
+        <div class="component-content-container">
+            <div className="grid-container">
+                {
+                    courses.map((course) => {
+                        return (
+                            <div key={course.id} onClick={(e) => {
+                                e.stopPropagation();
+                                history.push('/course:' + course.id)}
+                                } className="card clickable">
+                                <img src={course.img} className="card-img-top" alt=""></img>
+                                <div className="card-body">
+                                    <h5 className="card-title">{course.title}</h5>
+                                    <BuyButton course={course} trial={trial} endTrial={endTrial} />
+                                </div>
+                            </div>
+                        )
+                    })
+                }
+            </div>
+        </div>
+        </>
     )
 }
 
