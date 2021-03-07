@@ -20,11 +20,11 @@ function CoursesByGroup() {
         <>
         <div className="page-title">
             <h1>Valitse Kurssi</h1>
-            <div className="title-left-absolute-icon clickable" onClick={() => history.push('/')}>
+            <div id="back" className="title-left-absolute-icon clickable" onClick={() => history.push('/')}>
                 <i className="material-icons">arrow_back</i>
             </div>
         </div>
-        <div class="component-content-container">
+        <div className="component-content-container">
         <div className="grid-container">
             {
                 courses.map((course) => {

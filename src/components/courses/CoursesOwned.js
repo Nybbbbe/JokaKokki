@@ -20,7 +20,7 @@ function CoursesOwned() {
         <div className="page-title">
             <h1>Omat Kurssit</h1>
         </div>
-        <div class="component-content-container">
+        <div className="component-content-container">
             <div className="grid-container">
                 
                 {

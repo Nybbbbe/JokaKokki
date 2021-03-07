@@ -18,6 +18,7 @@ import Login from './components/login/Login';
 import Groups from './components/groups/Groups';
 import CoursesByGroup from './components/courses/CoursesByGroup';
 import CoursesOwned from './components/courses/CoursesOwned';
+import Profile from './components/profile/Profile';
 import './App.css';
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
                       <div className="main-content-container">
                         <Switch>
                           <Route exact path="/" component={Groups}/>
+                          <Route exact path="/profile" component={Profile}/>
                           {/* <Route exact path="/courses" component={Courses}/> */}
                           <Route exact path="/mycourses" component={CoursesOwned}/>
                           <Route exact path="/courses:group" component={CoursesByGroup}/>
@@ -51,9 +53,9 @@ function App() {
                             <BottomNavigation
                               value={history.location.pathname}
                             >
-                              <BottomNavigationAction label="Kategoriat" value="/" icon={<CategoryIcon />} component={Link} to="/"  />
-                              <BottomNavigationAction label="Omat Kurssit" value="/mycourses" icon={<HomeIcon />} component={Link} to="/mycourses" />
-                              <BottomNavigationAction label="Profiili" value="/profile" icon={<AccountCircleIcon />} component={Link} to="/profile" />
+                              <BottomNavigationAction id="bottomNav1" label="Kategoriat" value="/" icon={<CategoryIcon />} component={Link} to="/"  />
+                              <BottomNavigationAction id="bottomNav2" label="Omat Kurssit" value="/mycourses" icon={<HomeIcon />} component={Link} to="/mycourses" />
+                              <BottomNavigationAction id="bottomNav3" label="Profiili" value="/profile" icon={<AccountCircleIcon />} component={Link} to="/profile" />
                             </BottomNavigation>
                         )}
                       />

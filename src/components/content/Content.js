@@ -42,7 +42,7 @@ const Content = () => {
     return (
         <>
             <div key="title" className="page-title">
-                <div className="title-left-absolute-icon clickable" onClick={() => history.goBack()}>
+                <div id="back" className="title-left-absolute-icon clickable" onClick={() => history.goBack()}>
                     <i className="material-icons">arrow_back</i>
                 </div>
                 <h1>{episode.title}</h1>
