@@ -1,0 +1,13 @@
+.profile-picture {
+    margin-top: 10%;
+    max-width: 30%;
+    align-self: center;
+}
+
+.user-info:first-of-type {
+    margin-top: 10%
+}
+
+handsfree {
+    align-self: center;
+}
