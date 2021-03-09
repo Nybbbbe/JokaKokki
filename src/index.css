@@ -18,6 +18,10 @@ code {
     monospace;
 }
 
+p {
+  white-space: pre-wrap;
+}
+
 .page-title {
   padding: 1rem 0.5rem;
   position: relative;

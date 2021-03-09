@@ -32,7 +32,7 @@ function Courses() {
                                 e.stopPropagation();
                                 history.push('/course:' + course.id)}
                                 } className="card clickable">
-                                <img src={course.img} className="card-img-top" alt=""></img>
+                                <div className="card-img-top custom-background" style={{backgroundImage: "url(" + course.img + ")"}}></div>
                                 <div className="card-body">
                                     <h5 className="card-title">{course.title}</h5>
                                     <BuyButton course={course} trial={trial} endTrial={endTrial} />

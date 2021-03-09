@@ -5,24 +5,56 @@
             "title": "Pasta ruokien alkeet",
             "price": "2.99",
             "description": "Tällä kursilla opit tekemään tuorepasta ruokia aivan nollasta. Kurssi lähtee käyntiin tuorepastan taikinan teosta ja jatkuu sitten pasta ruokien tekoon kuten carbonara ja bolognese. Tämän kurssiin jälkeen tulet olemaan oikea mestari pasta kokki!",
-            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_2bvGYkDRFLW7YxO7MPsAlJEKaZEATdGZA&usqp=CAU",
+            "img": "https://loveincorporated.blob.core.windows.net/contentimages/fullsize/33683db6-adee-474a-bff1-4d73d5d7bf94-how-to-make-fresh-homemade-pasta.jpg",
             "classifications": ["classics"]
         },
         {
             "id": "2",
             "title": "Salaattien salat",
             "price": "2.99",
-            "description": "Tällä kursilla opit tekemään tuorepasta ruokia aivan nollasta. Kurssi lähtee käyntiin tuorepastan taikinan teosta ja jatkuu sitten pasta ruokien tekoon kuten carbonara ja bolognese. Tämän kurssiin jälkeen tulet olemaan oikea mestari pasta kokki!",
-            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_2bvGYkDRFLW7YxO7MPsAlJEKaZEATdGZA&usqp=CAU",
+            "description": "Salaatteja joka lähtöön",
+            "img": "https://cdn-rdb.arla.com/Files/arla-se/1776727224/0ec3cb10-58e6-4a3f-99de-193e9c1e5bb9.jpg?mode=crop&w=1200&h=630&scale=both&format=jpg&quality=80&ak=f525e733&hm=35af1404",
             "classifications": ["sport"]
         },
         {
             "id": "3",
             "title": "Viinit ruoassa",
             "price": "2.99",
-            "description": "Tällä kursilla opit tekemään tuorepasta ruokia aivan nollasta. Kurssi lähtee käyntiin tuorepastan taikinan teosta ja jatkuu sitten pasta ruokien tekoon kuten carbonara ja bolognese. Tämän kurssiin jälkeen tulet olemaan oikea mestari pasta kokki!",
-            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_2bvGYkDRFLW7YxO7MPsAlJEKaZEATdGZA&usqp=CAU",
+            "description": "Opit kaatamaan viiniä ruokaan",
+            "img": "https://www.yoranchsteakhouse.com/wp-content/uploads/2019/01/wine-and-steak-at-a-downtown-steakhouse-900x644.jpg",
             "classifications": ["finedining"]
+        },
+        {
+            "id": "4",
+            "title": "Perunan perusteet",
+            "price": "2.99",
+            "description": "Oletko aina halunnut syödä perunoita? Kukapa ei olisikaan. Perunat on pyöreitä tai soikeita herkullisia maan antineita, jota Luontoäiti meille armahtaa. Voimme kavaa niitä maan alta kyuin myyrät ja saada niistä ravintoa ja energiaa. Tällä kurssilla opit niiden kaikki salat niin valmistamisesta kypsennykseen ja valmiisiin ruokiin.",
+            "img": "https://satokausi.fi/wp-content/uploads/2019/03/peruna2.jpg",
+            "classifications": ["classics"]
+        },
+        {
+            "id": "5",
+            "title": "Vuokaruat",
+            "price": "2.99",
+            "description": "Tällä kurssilla opit tekemään herkullisia mutta helppoja ruokia heittämällä ainekset kasaan pannulle ja tuikkaamalla pannun uuniin. Kinkkukiusaus, makaroonilaatikko, kebabkiusaus, pyttipannu, koulukiusaus, täältä löydät ne kaikki! Älä vain missään nimessä jaa reseptejä muille tai lakitiimimme ottaa yhteyttä. Bon apetit!",
+            "img": "https://www.maaseuduntulevaisuus.fi/image/policy:1.784745:1578574703/image.jpg?f=default&q=0.9&$p$f$q=fda4bc7&w=754&$w=72c0eb5",
+            "classifications": ["classics"]
+        },
+        {
+            "id": "6",
+            "title": "Haastavat pastaruoat",
+            "price": "2.99",
+            "description": "Tämä kurssi on jatkoa kurssille ‘Pastaruokien alkeet’, eli käy ensin se kurssi, jos olet aloittelija. Toisaalta jos taitoa on niin antaa mennä! Tällä kurssilla opit syömään pastaa monessa muodossa: keitettynä, paistettuna, grillattuna, raakana ja mikrossa valmistettuna. Hyppää kurssille ja nauti!",
+            "img": "https://assets.bonappetit.com/photos/5de7e495b79e20000879d72a/1:1/w_2560%2Cc_limit/Amiel-Lobster-Pasta-Lede-1.jpg",
+            "classifications": ["classics"]
+        },
+        {
+            "id": "7",
+            "title": "Hullun hyvät pannarit",
+            "price": "2.99",
+            "description": "Oletko koskaan nähnyt elokuvissa kun pöytään tuodaan herkullinen läjä pannareia ja miettinyt että näyttääpä hyvältä? Jos olet niin olet oikeass paikassa!",
+            "img": "https://media.eggs.ca/assets/RecipePhotos/_resampled/FillWyIxMjgwIiwiNzIwIl0/Fluffy-Pancakes-New-CMS.jpg",
+            "classifications": ["brunch"]
         }
     ],
     
@@ -44,47 +76,57 @@
             "id": "pasta2",
             "parentId": "1",
             "episodeNumber": "2",
-            "title": "Pastan keittäminen",
-            "episodeContents": {
-                "id": "pasta1"
-            }
+            "title": "Pastan keittäminen"
         },
         {
             "id": "pasta3",
             "parentId": "1",
             "episodeNumber": "3",
-            "title": "Bolognese",
-            "episodeContents": {
-                "id": "pasta1"
-            }
+            "title": "Bolognese"
         },
         {
             "id": "pasta4",
             "parentId": "1",
             "episodeNumber": "4",
-            "title": "Carbonara",
-            "episodeContents": {
-                "id": "pasta1"
-            }
+            "title": "Carbonara"
         },
         {
-            "id": "pasta1",
-            "parentId": "2",
+            "id": "peruna1",
+            "parentId": "4",
             "episodeNumber": "1",
-            "title": "Pasta taikina",
-            "episodeContents": {
-                "id": "pasta1"
-            }
+            "title": "Perunalajikkeet"
         },
         {
-            "id": "pasta1",
-            "parentId": "3",
+            "id": "peruna2",
+            "parentId": "4",
+            "episodeNumber": "2",
+            "title": "Perunan keittäminen"
+        },
+        {
+            "id": "vuoka1",
+            "parentId": "5",
             "episodeNumber": "1",
-            "title": "Pasta taikina",
-            "episodeContents": {
-                "id": "pasta1"
-            }
+            "title": "Kinkkukiusaus"
+        },
+        {
+            "id": "vuoka2",
+            "parentId": "5",
+            "episodeNumber": "2",
+            "title": "Pyttipannu"
+        },
+        {
+            "id": "vuoka3",
+            "parentId": "5",
+            "episodeNumber": "3",
+            "title": "Makaroonilaatikko"
+        },
+        {
+            "id": "pasta21",
+            "parentId": "6",
+            "episodeNumber": "1",
+            "title": "One Pot -pasta"
         }
+
     ],
     "episodeContents": [
         {
@@ -123,7 +165,131 @@
                 {"type": "img", "src":""},
                 {"type": "timer", "src":""}
             ]
+        },
+        {
+            "id": "pasta2page1",
+            "parentId": "pasta2",
+            "pageNumber": "1",
+            "content": [
+                {"type": "subtitle", "src":"Osa 1"},
+                {"type": "video", "src":"https://www.youtube.com/watch?v=I6uQL6pAUWk"},
+                {"type": "desc", "src":"Step 1. boil pasta"},
+                {"type": "timer", "src":"5"},
+                {"type": "desc", "src":"Step 2. boil more pasta"}
+            ]
+        },
+        {
+            "id": "pasta2page2",
+            "parentId": "pasta2",
+            "pageNumber": "2",
+            "content": [
+                {"type": "subtitle", "src":"Syö pastaa"},
+                {"type": "video", "src":"https://www.youtube.com/watch?v=RJT2U2ztFMk"},
+                {"type": "desc", "src":"Step 3: bone apple tea"},
+                {"type": "timer", "src":"5"}
+            ]
+        },
+        {
+            "id": "pasta3page1",
+            "parentId": "pasta3",
+            "pageNumber": "1",
+            "content": [
+                {"type": "subtitle", "src":"Osa 1"},
+                {"type": "video", "src":"https://www.youtube.com/watch?v=3PyL-qe1va0"},
+                {"type": "desc", "src":"Pasta bolognese"},
+                {"type": "timer", "src":"5"}
+            ]
+        },
+        {
+            "id": "pasta4page1",
+            "parentId": "pasta4",
+            "pageNumber": "1",
+            "content": [
+                {"type": "subtitle", "src":"Osa 1"},
+                {"type": "video", "src":"https://www.youtube.com/watch?v=fCuO6IRbA60"},
+                {"type": "desc", "src":"Step 1. Katso video"},
+                {"type": "timer", "src":"0.2"}            ]
+        },
+        {
+            "id": "peruna1page1",
+            "parentId": "peruna1",
+            "pageNumber": "1",
+            "content": [
+                {"type": "subtitle", "src":"Title 1"},
+                {"type": "img", "src":"https://i1.wp.com/molekyyligastronomia.fi/wp-content/uploads/2014/11/peruna.jpg?fit=344%2C212&ssl=1"},
+                {"type": "desc", "src":"Step 1. Feel the potato"},
+                {"type": "timer", "src":"0.5"},
+                {"type": "desc", "src":"Step 2. Taste the potato"}
+            ]
+        },
+        {
+            "id": "peruna1page2",
+            "parentId": "peruna1",
+            "pageNumber": "2",
+            "content": [
+                {"type": "subtitle", "src":"Title 1"},
+                {"type": "img", "src":"https://images.almatalent.fi/cx0,cy1,cw1140,ch855,570x/https://assets.almatalent.fi/image/288a876b-5e35-3b2f-938c-1ed7bec70252"},
+                {"type": "desc", "src":"Step 3. Peel the potato"},
+                {"type": "timer", "src":"0.5"},
+                {"type": "desc", "src":"Step 4. Be the potato"}
+            ]
+        },
+        {
+            "id": "peruna2page1",
+            "parentId": "peruna2",
+            "pageNumber": "1",
+            "content": [
+                {"type": "subtitle", "src":"Title 1"},
+                {"type": "img", "src":"https://hs.mediadelivery.fi/img/468/bedb0c3b017d487388fded89fb078eea.jpg"},
+                {"type": "desc", "src":"POTATO"},
+                {"type": "timer", "src":"0.5"}
+            ]
+        },
+        {
+            "id": "vuoka1page1",
+            "parentId": "vuoka1",
+            "pageNumber": "1",
+            "content": [
+                {"type": "subtitle", "src":"Title 1"},
+                {"type": "img", "src":"https://cdn.valio.fi/mediafiles/e010659f-ff37-4652-84a3-03793af23c03/1440x1080-recipe-hero/4x3/kinkkukiusaus.jpg"},
+                {"type": "desc", "src":"Vaihe 1: kiusaa possuja"},
+                {"type": "timer", "src":"0.5"}
+            ]
+        },
+        {
+            "id": "vuoka2page1",
+            "parentId": "vuoka2",
+            "pageNumber": "1",
+            "content": [
+                {"type": "subtitle", "src":"Title 1"},
+                {"type": "img", "src":"https://www.kotikokki.net/media/cache/large/recipeimage/large/52d6dcfcd074a9ec0e08049f/original.jpg?1297504474"},
+                {"type": "desc", "src":"Onpa huono kuva"},
+                {"type": "timer", "src":"0.5"}
+            ]
+        },
+        {
+            "id": "pasta21page1",
+            "parentId": "pasta21",
+            "pageNumber": "1",
+            "content": [
+                {"type": "subtitle", "src":"One Pot -pasta"},
+                {"type": "img", "src":"https://public.keskofiles.com/f/recipe/KR16_4_onepotpasta?w=2400&fit=crop"},
+                {"type": "desc", "src":"1. Hienonna kuorittu sipuli. Leikkaa paprika ja kesäkurpitsa pieniksi kuutioiksi.\n\n2. Kuumenna öljy paistokasarissa. Ruskista jauheliha ja lisää sipulit kuullottumaan. Lisää paprikat, vesi, suola, mustapippuri ja pasta. Keitä kannen alla noin 8 minuuttia.\n\n3. Sekoita joukkoon kesäkurpitsat, tomaattimurska ja timjami. Keitä vielä noin 6 minuuttia. Ripottele pinnalle tuoretta basilikaa."},
+                {"type": "timer", "src":"0.5"}
+            ]
+        },
+        {
+            "id": "pasta21page2",
+            "parentId": "pasta21",
+            "pageNumber": "2",
+            "content": [
+                {"type": "subtitle", "src":"Syö pastaa"},
+                {"type": "img", "src":"https://assets.lily.fi/sites/lily/files/user/6629/2013/08/lasagne_oli.jpg"},
+                {"type": "desc", "src":"Oho, joku söy jo pastan."},
+                {"type": "timer", "src":"5"}
+            ]
         }
+
     ],
     "groups": [
         {
