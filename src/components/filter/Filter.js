@@ -16,7 +16,7 @@ function Filter(props) {
         <div className="input-group input-group-lg filter-container">
             <input type="text" className="form-control filter-input" value={userInput} onChange={onInputChange} placeholder="Etsi" />
             <div className="input-group-append">
-                <span class="input-group-text">
+                <span className="input-group-text">
                     <i className="material-icons">search</i>
                 </span>
             </div>
