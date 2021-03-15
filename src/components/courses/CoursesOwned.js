@@ -22,7 +22,6 @@ function CoursesOwned() {
         </div>
         <div className="component-content-container">
             <div className="grid-container">
-                
                 {
                     courses.map((course) => {
                         return (

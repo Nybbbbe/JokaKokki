@@ -63,11 +63,11 @@ const Content = () => {
 
             <div className="button-container">
                 {value > 1?
-                    <button type="button" className="btn btn-secondary left-btn" onClick={() => handleChange(value - 1)}>Takaisin</button> : <div></div>
+                    <button id="previous" type="button" className="btn btn-secondary left-btn" onClick={() => handleChange(value - 1)}>Takaisin</button> : <div></div>
                 }
                 <span className="page-num-text">{"Sivu: " + value + " / " + episodeContent.length}</span>
                 {value < episodeContent.length?
-                    <button type="button" className="btn btn-primary right-btn" onClick={() => handleChange(value + 1)}>Seuraava</button> : <div></div>
+                    <button id="next" type="button" className="btn btn-primary right-btn" onClick={() => handleChange(value + 1)}>Seuraava</button> : <div></div>
                 }
             </div>
         </>

@@ -3,11 +3,14 @@ const SpeechGrammarList = window.SpeechRecognition || window.webkitSpeechRecogni
 const SpeechRecognitionEvent = window.SpeechRecognition || window.webkitSpeechRecognition
 
 class VoiceControl {
-    static elementIdsTracked = ["bottomNav1", "bottomNav2", "bottomNav3", "back"];
+    static elementIdsTracked = ["bottomNav1", "bottomNav2", "bottomNav3", "back", "next", "previous"];
+    static elementIdsWithWords = ["bottomNav1", "bottomNav2", "bottomNav3", "back", "next", "previous"];
     static voiceControlActive = false;
     static idToElementMap = new Map();
+    static wordToElementMap = new Map();
     static updateViewLoop = null;
     static numbersAvailable = [];
+    static wordsAvailable = [];
 
     static recognizer;
     static recognizerGrammerList;
@@ -34,17 +37,33 @@ class VoiceControl {
         "9": 9
     }
 
+    static wordsToElements = {
+        "groups": "bottomNav1",
+        "home": "bottomNav2",
+        "profile": "bottomNav3",
+        "back": "back",
+        "next": "next",
+        "previous": "previous"
+    }
+
     static start = () => {
         this.updateViewLoop = setInterval(() => {
             let i = 1;
-            this.numbersAvailable = []
+            this.numbersAvailable = [];
+            this.wordsAvailable = [];
             this.elementIdsTracked.forEach(id => {
                 const docElement = document.getElementById(id);
                 if (docElement !== null) {
                     if (this.isInViewport(docElement)) {
-                        this.addCallId(docElement, i);
-                        this.numbersAvailable.push(i);
-                        i++;
+                        if (this.elementIdsWithWords.includes(id)) {
+                            const word = this.getWord(id);
+                            this.addCallName(docElement, word);
+                            this.wordsAvailable.push(word);
+                        } else {
+                            this.addCallId(docElement, i);
+                            this.numbersAvailable.push(i);
+                            i++;
+                        }
                     } else {
                         this.removeCallId(docElement);
                     }
@@ -65,12 +84,18 @@ class VoiceControl {
         }
         this.numbersAvailable.forEach(id => {
             console.log(id);
-            const el = this.idToElementMap[id]
+            const el = this.idToElementMap[id];
             console.log(el);
             if (el) {
                 this.removeCallId(el);
             }
-        })
+        });
+        for (let word in this.wordsToElements) {
+            const el = this.wordToElementMap[word];
+            if (el) {
+                this.removeCallId(el);
+            }
+        }
     }
 
     static toggle = () => {
@@ -106,13 +131,17 @@ class VoiceControl {
             let result = e.results[last][0].transcript;
             result = result.replace(/ /g,'')
             console.log("lenght: " + result.length)
-            console.log(result)
-            const command = this.wordToNums[result];
+            console.log(result);
+            let command = this.wordToNums[result];
             if (command && this.numbersAvailable.includes(command)) {
                 console.log(command);
                 console.log(this.idToElementMap[command]);
                 if (this.idToElementMap[command]) {
                     this.idToElementMap[command].click();
+                }
+            } else {
+                if (this.wordsAvailable.includes(result)) {
+                    this.wordToElementMap[result].click();
                 }
             }
         }
@@ -140,7 +169,7 @@ class VoiceControl {
         let addNew = true;
         let child = undefined;
         el.childNodes.forEach(node => {
-            if (node.classList.contains("absolute-text-container")) {
+            if (node && node.classList.contains("absolute-text-container")) {
                 addNew = false;
                 child = node;
             }
@@ -150,7 +179,7 @@ class VoiceControl {
             const d = document.createElement('div');
             d.classList.add("absolute-text-container");
             const p = document.createElement('p');
-            p.innerText = "V" + i;
+            p.innerText = "V: " + i;
             p.classList.add("absolute-text");
             d.appendChild(p)
             el.appendChild(d);
@@ -160,9 +189,49 @@ class VoiceControl {
         }
     }
 
+    static addCallName = (el, name) => {
+        this.wordToElementMap[name] = el;
+        let addNew = true;
+        let child = undefined;
+        el.childNodes.forEach(node => {
+            if (node.classList && node.classList.contains("absolute-text-container")) {
+                addNew = false;
+                child = node;
+            }
+        });
+        if (addNew) {
+            el.classList.add("relative");
+            const d = document.createElement('div');
+            d.classList.add("absolute-text-container");
+            const p = document.createElement('p');
+            p.innerText = "V: " + name.toUpperCase();;
+            p.classList.add("absolute-text");
+            d.appendChild(p)
+            el.appendChild(d);
+        } else {
+            const existingP = child.childNodes[0];
+            existingP.innerText = "V: " + name.toUpperCase();;
+        }
+    }
+
     static addTrackedElementId = (elementId) => {
         if (!this.elementIdsTracked.includes(elementId)) {
             this.elementIdsTracked.push(elementId);
+        }
+    }
+
+    static wordsToElements = {
+        "groups": "bottomNav1",
+        "home": "bottomNav2",
+        "profile": "bottomNav3",
+        "back": "back",
+        "next": "next",
+        "previous": "previous"
+    }
+
+    static getWord = (elementId) => {
+        for (const word in this.wordsToElements) {
+            if (this.wordsToElements[word] === elementId) return word;
         }
     }
 }
