@@ -24,7 +24,6 @@ function Groups() {
     const filteredGroups = useMemo(() => {
         return groups.filter((group) => {
             const courses = Server.getCoursesByGroup(group.class);
-            console.log(courses);
             return courses.some((course) => FilterHandler.shouldShowCourse(course));
         });
     }, [groups, filter]);
