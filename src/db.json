@@ -166,7 +166,7 @@
             "pageNumber": "3",
             "content": [
                 { "type": "subtitle", "src": "Title 3" },
-                { "type": "video", "src": "" },
+                { "type": "video", "src": "/videos/test_video.mp4" },
                 { "type": "desc", "src": "" },
                 { "type": "img", "src": "" },
                 { "type": "timer", "src": "" }
