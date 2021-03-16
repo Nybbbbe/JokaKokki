@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from "react";
 import Server from "../../server";
 import "./Courses.css";
-import { useHistory, useParams } from 'react-router-dom';
+import { useHistory, useParams } from "react-router-dom";
 import BuyButton from "../buybutton/BuyButton";
+import Filter from "../filter/Filter";
+import FilterHandler from "../../filterhandler";
 
 function CoursesByGroup() {
     const params = useParams();
@@ -10,42 +12,54 @@ function CoursesByGroup() {
     const user = Server.getUser();
     const history = useHistory();
     const [trial, setTrial] = useState(user.freeTrial);
+    const [filter, setFilter] = useState(FilterHandler.currentFilter);
 
     function endTrial() {
-        Server.setUserTrial(false)
-        setTrial(false)
+        Server.setUserTrial(false);
+        setTrial(false);
     }
+
+    function onFilterChange(newFilter) {
+        setFilter(newFilter);
+    }
+
+    const filteredCourses = useMemo(() => {
+        return courses.filter((course) => FilterHandler.shouldShowCourse(course));
+    }, [courses, filter]);
 
     return (
         <>
-        <div className="page-title">
-            <h1>Valitse Kurssi</h1>
-            <div id="back" className="title-left-absolute-icon clickable" onClick={() => history.push('/')}>
-                <i className="material-icons">arrow_back</i>
+            <div className="page-title">
+                <h1>Valitse Kurssi</h1>
+                <div id="back" className="title-left-absolute-icon clickable" onClick={() => history.push("/")}>
+                    <i className="material-icons">arrow_back</i>
+                </div>
             </div>
-        </div>
-        <div className="component-content-container">
-        <div className="grid-container">
-            {
-                courses.map((course) => {
-                    return (
-                        <div key={course.id} onClick={(e) => {
-                            e.stopPropagation();
-                            history.push('/course:' + course.id)}
-                            } className="card clickable">
-                            <div className="card-img-top custom-background" style={{backgroundImage: "url(" + course.img + ")"}}></div>
-                            <div className="card-body">
-                                <h5 className="card-title">{course.title}</h5>
-                                <BuyButton course={course} trial={trial} endTrial={endTrial} />
+            <div className="component-content-container">
+                <Filter onFilterChange={onFilterChange} />
+                <div className="grid-container">
+                    {filteredCourses.map((course) => {
+                        return (
+                            <div
+                                key={course.id}
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    history.push("/course:" + course.id);
+                                }}
+                                className="card clickable"
+                            >
+                                <div className="card-img-top custom-background" style={{ backgroundImage: "url(" + course.img + ")" }}></div>
+                                <div className="card-body">
+                                    <h5 className="card-title">{course.title}</h5>
+                                    <BuyButton course={course} trial={trial} endTrial={endTrial} />
+                                </div>
                             </div>
-                        </div>
-                    )
-                })
-            }
-        </div>
-        </div>
+                        );
+                    })}
+                </div>
+            </div>
         </>
-    )
+    );
 }
 
 export default CoursesByGroup;

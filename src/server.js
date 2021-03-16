@@ -63,6 +63,10 @@ class Server {
         return db.groups;
     }
 
+    static getCategories = () => {
+        return db.categories;
+    }
+
 }
 
 export default Server;

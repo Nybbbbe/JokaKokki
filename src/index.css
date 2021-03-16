@@ -105,3 +105,8 @@ p {
       grid-template-columns: 100%;
   }
 }
+
+.btn-primary {
+  background-color: #6BAA75 !important;
+  border-color: #6AA468 !important;
+}
