@@ -8,7 +8,7 @@ import BuyButton from '../buybutton/BuyButton';
 const ConfirmationModal = ({title, description, close, closeText, confirm, confirmText}) => {
     return (
         <>
-        <div className="modal" role="dialog">
+        <div className="modal" role="dialog" onClick={(e) => {e.stopPropagation(); close()}}>
             <div className="modal-dialog" role="document">
                 <div className="modal-content">
                 <div className="modal-header">
@@ -34,7 +34,7 @@ const ConfirmationModal = ({title, description, close, closeText, confirm, confi
                 </div>
             </div>
         </div>
-        <div class="backdrop"></div>
+        <div className="backdrop"></div>
         </>
     )
 }
