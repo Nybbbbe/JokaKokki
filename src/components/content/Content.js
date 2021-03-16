@@ -41,13 +41,13 @@ const Content = () => {
 
     return (
         <>
-            <div key="title" className="page-title">
+            <div className="page-title">
                 <div id="back" className="title-left-absolute-icon clickable" onClick={() => history.goBack()}>
                     <i className="material-icons">arrow_back</i>
                 </div>
                 <h1>{episode.title}</h1>
             </div>
-            <div key="content" className="content-container">
+            <div id="content" className="content-container">
                 {episodeContent.map(content => {
                     return (
                         <TabPanel key={content.id} value={value} index={parseInt(content.pageNumber)}>

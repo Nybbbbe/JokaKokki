@@ -1,9 +1,9 @@
-import React, { useReducer, useState } from 'react';
+import React, { useState } from 'react';
 import ConfirmationModal from '../confirmationmodal/ConfirmationModal';
 import "./BuyButton.css";
 import Server from "../../server";
 
-function BuyButton({course, trial, endTrial}) {
+function BuyButton({course, trial, endTrial, voicecontrol = false}) {
     // eslint-disable-next-line no-unused-vars
     // const [ignored, forceUpdate] = useReducer(x => x + 1, 0);
     const [showConfirmationModal, setShowConfirmationModal] = useState(false);
@@ -26,7 +26,7 @@ function BuyButton({course, trial, endTrial}) {
 
     return (
             <>
-            <button type="button" className="btn btn-primary" onClick={(e) => {
+            <button id={voicecontrol? "buy" : null} type="button" className="btn btn-primary relative" onClick={(e) => {
                 e.stopPropagation();
                 if (owned) {
                     return;

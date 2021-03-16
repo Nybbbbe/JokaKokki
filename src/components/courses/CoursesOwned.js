@@ -32,7 +32,7 @@ function CoursesOwned() {
         <div className="page-title">
             <h1>Omat Kurssit</h1>
         </div>
-        <div className="component-content-container">
+        <div id="content" className="component-content-container">
         <Filter onFilterChange={onFilterChange} />
             <div className="grid-container">
                 {

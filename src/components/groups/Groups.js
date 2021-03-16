@@ -33,7 +33,7 @@ function Groups() {
             <div key={"title"} className="page-title">
                 <h1>Valitse kategoria</h1>
             </div>
-            <div className="component-content-container">
+            <div id="content" className="component-content-container">
                 <Filter onFilterChange={onFilterChange} />
                 <div className="grid-container">
                     {filteredGroups.map((group) => {

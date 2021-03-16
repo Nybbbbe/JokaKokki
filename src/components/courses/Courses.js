@@ -23,7 +23,7 @@ function Courses() {
                 <i className="material-icons">arrow_back</i>
             </div>
         </div>
-        <div className="component-content-container">
+        <div id="content" className="component-content-container">
             <div className="grid-container">
                 {
                     courses.map((course) => {

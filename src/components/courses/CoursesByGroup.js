@@ -36,7 +36,7 @@ function CoursesByGroup() {
                     <i className="material-icons">arrow_back</i>
                 </div>
             </div>
-            <div className="component-content-container">
+            <div id="content" className="component-content-container">
                 <Filter onFilterChange={onFilterChange} />
                 <div className="grid-container">
                     {filteredCourses.map((course) => {

@@ -22,3 +22,7 @@
     z-index: 100;
     background-color: black;
 }
+
+.btn {
+    min-width: 100px;
+}

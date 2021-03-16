@@ -20,7 +20,7 @@ const Profile = () => {
             <div className="page-title">
                 <h1>Profiili</h1>
             </div>
-            <div className="component-content-container">
+            <div id="content" className="component-content-container">
                 <h3 className="user-info">Nimi: { user.name }</h3>
                 <h3 className="user-info">Email: { user.email }</h3>
                 <img className="profile-picture" src={ user.img } alt="profile-picture"/>

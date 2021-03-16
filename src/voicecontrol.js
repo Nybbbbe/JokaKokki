@@ -3,8 +3,8 @@ const SpeechGrammarList = window.SpeechRecognition || window.webkitSpeechRecogni
 const SpeechRecognitionEvent = window.SpeechRecognition || window.webkitSpeechRecognition
 
 class VoiceControl {
-    static elementIdsTracked = ["bottomNav1", "bottomNav2", "bottomNav3", "back", "next", "previous"];
-    static elementIdsWithWords = ["bottomNav1", "bottomNav2", "bottomNav3", "back", "next", "previous"];
+    static elementIdsTracked = ["bottomNav1", "bottomNav2", "bottomNav3", "back", "next", "previous", "buy", "close", "confirm"];
+    static elementIdsWithWords = ["bottomNav1", "bottomNav2", "bottomNav3", "back", "next", "previous", "buy", "close", "confirm"];
     static voiceControlActive = false;
     static idToElementMap = new Map();
     static wordToElementMap = new Map();
@@ -43,7 +43,14 @@ class VoiceControl {
         "profile": "bottomNav3",
         "back": "back",
         "next": "next",
-        "previous": "previous"
+        "previous": "previous",
+        "buy": "buy",
+        "close": "close",
+        "confirm": "confirm"
+    }
+
+    static closeWords = {
+        "bye": "buy"
     }
 
     static start = () => {
@@ -140,8 +147,24 @@ class VoiceControl {
                     this.idToElementMap[command].click();
                 }
             } else {
+                const wordTransform = this.closeWords[result];
+                if (wordTransform) {
+                    result = wordTransform;
+                }
                 if (this.wordsAvailable.includes(result)) {
                     this.wordToElementMap[result].click();
+                }
+            }
+            if (result === "scrollup") {
+                const el = document.getElementById("content");
+                if (el) {
+                    el.scrollBy(0, -200)
+                }
+            }
+            if (result === "scrolldown") {
+                const el = document.getElementById("content");
+                if (el) {
+                    el.scrollBy(0, 200)
                 }
             }
         }
@@ -175,7 +198,6 @@ class VoiceControl {
             }
         });
         if (addNew) {
-            el.classList.add("relative");
             const d = document.createElement('div');
             d.classList.add("absolute-text-container");
             const p = document.createElement('p');
@@ -200,7 +222,6 @@ class VoiceControl {
             }
         });
         if (addNew) {
-            el.classList.add("relative");
             const d = document.createElement('div');
             d.classList.add("absolute-text-container");
             const p = document.createElement('p');
@@ -218,15 +239,6 @@ class VoiceControl {
         if (!this.elementIdsTracked.includes(elementId)) {
             this.elementIdsTracked.push(elementId);
         }
-    }
-
-    static wordsToElements = {
-        "groups": "bottomNav1",
-        "home": "bottomNav2",
-        "profile": "bottomNav3",
-        "back": "back",
-        "next": "next",
-        "previous": "previous"
     }
 
     static getWord = (elementId) => {

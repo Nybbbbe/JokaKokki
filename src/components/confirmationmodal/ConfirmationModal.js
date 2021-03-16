@@ -1,9 +1,5 @@
-import React, { useState } from 'react';
-import Server from "../../server";
+import React from 'react';
 import "./ConfirmationModal.css";
-import VoiceControl from '../../voicecontrol';
-import { useHistory, useParams } from 'react-router-dom';
-import BuyButton from '../buybutton/BuyButton';
 
 const ConfirmationModal = ({title, description, close, closeText, confirm, confirmText}) => {
     return (
@@ -28,8 +24,8 @@ const ConfirmationModal = ({title, description, close, closeText, confirm, confi
                     <p>{description}</p>
                 </div>
                 <div className="modal-footer">
-                    {confirm? <button type="button" className="btn btn-primary" onClick={(e) => {e.stopPropagation(); confirm()}}>{confirmText}</button>: null}
-                    {close? <button type="button" className="btn btn-secondary" data-dismiss="modal" onClick={(e) => {e.stopPropagation(); close()}}>{closeText}</button> : null}
+                    {confirm? <button id="confirm" type="button" className="btn btn-primary relative" onClick={(e) => {e.stopPropagation(); confirm()}}>{confirmText}</button>: null}
+                    {close? <button id="close" type="button" className="btn btn-secondary relative" data-dismiss="modal" onClick={(e) => {e.stopPropagation(); close()}}>{closeText}</button> : null}
                 </div>
                 </div>
             </div>
