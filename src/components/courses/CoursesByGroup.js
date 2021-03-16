@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from "react";
 import Server from "../../server";
+import VoiceControl from '../../voicecontrol';
 import "./Courses.css";
 import { useHistory, useParams } from "react-router-dom";
 import BuyButton from "../buybutton/BuyButton";
@@ -41,6 +42,7 @@ function CoursesByGroup() {
                     {filteredCourses.map((course) => {
                         return (
                             <div
+                                id={course.id}
                                 key={course.id}
                                 onClick={(e) => {
                                     e.stopPropagation();
@@ -48,6 +50,7 @@ function CoursesByGroup() {
                                 }}
                                 className="card clickable"
                             >
+                            {VoiceControl.addTrackedElementId(course.id)}
                                 <div className="card-img-top custom-background" style={{ backgroundImage: "url(" + course.img + ")" }}></div>
                                 <div className="card-body">
                                     <h5 className="card-title">{course.title}</h5>

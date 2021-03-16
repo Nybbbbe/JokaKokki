@@ -158,7 +158,7 @@ class VoiceControl {
 
     static removeCallId = (el) => {
         el.childNodes.forEach(node => {
-            if (node.classList.contains("absolute-text-container")) {
+            if (node.classList && node.classList.contains("absolute-text-container")) {
                 el.removeChild(node);
             }
         });
@@ -169,7 +169,7 @@ class VoiceControl {
         let addNew = true;
         let child = undefined;
         el.childNodes.forEach(node => {
-            if (node && node.classList.contains("absolute-text-container")) {
+            if (node.classList && node.classList.contains("absolute-text-container")) {
                 addNew = false;
                 child = node;
             }

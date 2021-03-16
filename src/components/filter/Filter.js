@@ -15,11 +15,7 @@ function Filter(props) {
     return (
         <div className="input-group input-group-lg filter-container">
             <input type="text" className="form-control filter-input" value={userInput} onChange={onInputChange} placeholder="Etsi" />
-            <div className="input-group-append">
-                <span className="input-group-text">
-                    <i className="material-icons">search</i>
-                </span>
-            </div>
+            <i className="material-icons search-icon">search</i>
         </div>
     );
 }

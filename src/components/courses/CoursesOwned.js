@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import Server from "../../server";
 import "./Courses.css";
+import VoiceControl from '../../voicecontrol';
 import { useHistory } from 'react-router-dom';
 import BuyButton from "../buybutton/BuyButton";
 import Filter from "../filter/Filter";
