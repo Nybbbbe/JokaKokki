@@ -25,6 +25,7 @@ function CoursesOwned() {
 
     const filteredCourses = useMemo(() => {
         return courses.filter((course) => FilterHandler.shouldShowCourse(course));
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [courses, filter]);
 
     return (
@@ -38,10 +39,11 @@ function CoursesOwned() {
                 {
                     filteredCourses.map((course) => {
                         return (
-                            <div key={course.id} onClick={(e) => {
+                            <div key={course.id} id={course.id} onClick={(e) => {
                                 e.stopPropagation();
                                 history.push('/course:' + course.id)}
                                 } className="card clickable">
+                                {VoiceControl.addTrackedElementId(course.id)}
                                 <div className="card-img-top custom-background" style={{backgroundImage: "url(" + course.img + ")"}}></div>
                                 <div className="card-body">
                                     <h5 className="card-title">{course.title}</h5>
