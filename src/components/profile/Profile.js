@@ -23,7 +23,9 @@ const Profile = () => {
             <div id="content" className="component-content-container">
                 <h3 className="user-info">Nimi: { user.name }</h3>
                 <h3 className="user-info">Email: { user.email }</h3>
-                <img className="profile-picture" src={ user.img } alt="profile-picture"/>
+                {
+                // eslint-disable-next-line jsx-a11y/img-redundant-alt
+                }<img className="profile-picture" src={ user.img } alt="profile-picture"/>
             </div>
             <FormGroup>
                 <FormControlLabel

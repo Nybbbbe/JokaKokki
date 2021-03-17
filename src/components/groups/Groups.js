@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo } from "react";
+import React, { useState, useMemo } from "react";
 import Server from "../../server";
 import VoiceControl from "../../voicecontrol";
 import "./Groups.css";
@@ -26,6 +26,7 @@ function Groups() {
             const courses = Server.getCoursesByGroup(group.class);
             return courses.some((course) => FilterHandler.shouldShowCourse(course));
         });
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [groups, filter]);
 
     return (

@@ -1,6 +1,6 @@
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
-const SpeechGrammarList = window.SpeechRecognition || window.webkitSpeechRecognition
-const SpeechRecognitionEvent = window.SpeechRecognition || window.webkitSpeechRecognition
+//const SpeechGrammarList = window.SpeechRecognition || window.webkitSpeechRecognition
+//const SpeechRecognitionEvent = window.SpeechRecognition || window.webkitSpeechRecognition
 
 class VoiceControl {
     static elementIdsTracked = ["bottomNav1", "bottomNav2", "bottomNav3", "back", "next", "previous", "buy", "close", "confirm"];

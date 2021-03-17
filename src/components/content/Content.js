@@ -51,9 +51,9 @@ const Content = () => {
                 {episodeContent.map(content => {
                     return (
                         <TabPanel key={content.id} value={value} index={parseInt(content.pageNumber)}>
-                            {content.content.map((cont) => {
+                            {content.content.map((cont, i) => {
                                 return (
-                                    <ContentContainer key={cont}type={cont.type} src={cont.src}/>
+                                    <ContentContainer key={i}type={cont.type} src={cont.src}/>
                                 )
                             })}
                         </TabPanel>

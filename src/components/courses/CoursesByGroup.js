@@ -26,6 +26,7 @@ function CoursesByGroup() {
 
     const filteredCourses = useMemo(() => {
         return courses.filter((course) => FilterHandler.shouldShowCourse(course));
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [courses, filter]);
 
     return (
