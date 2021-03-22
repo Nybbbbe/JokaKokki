@@ -1,19 +1,12 @@
-class FilterHandler {
-    static currentFilter = "";
+const shouldShowCourse = (filter, course) => {
+    if (course.title.toLowerCase().includes(filter.toLowerCase())) {
+        return true;
+    }
+    if (course.categories.some((cat) => cat.includes(filter.toLowerCase()))) {
+        return true;
+    }
+    return false;
+};
 
-    static changeFilter = (filter) => {
-        this.currentFilter = filter;
-    };
-
-    static shouldShowCourse = (course) => {
-        if (course.title.toLowerCase().includes(this.currentFilter.toLowerCase())) {
-            return true;
-        }
-        if (course.categories.some((cat) => cat.includes(this.currentFilter.toLowerCase()))) {
-            return true;
-        }
-        return false;
-    };
-}
-
+const FilterHandler = { shouldShowCourse };
 export default FilterHandler;

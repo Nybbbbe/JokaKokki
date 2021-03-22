@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import "./Filter.css";
-import FilterHandler from "../../filterhandler";
 
 function Filter(props) {
-    const [userInput, setUserInput] = useState(FilterHandler.currentFilter);
+    const [userInput, setUserInput] = useState("");
 
     function onInputChange(e) {
         const input = e.currentTarget.value;
         setUserInput(input);
-        FilterHandler.changeFilter(input);
+        //FilterHandler.changeFilter(input);
         props.onFilterChange(input);
     }
 

@@ -12,7 +12,7 @@ function CoursesOwned() {
     const user = Server.getUser();
     const history = useHistory();
     const [trial, setTrial] = useState(user.freeTrial);
-    const [filter, setFilter] = useState(FilterHandler.currentFilter);
+    const [filter, setFilter] = useState("");
     
     function endTrial() {
         Server.setUserTrial(false)
@@ -24,8 +24,7 @@ function CoursesOwned() {
     }
 
     const filteredCourses = useMemo(() => {
-        return courses.filter((course) => FilterHandler.shouldShowCourse(course));
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+        return courses.filter((course) => FilterHandler.shouldShowCourse(filter, course));
     }, [courses, filter]);
 
     return (

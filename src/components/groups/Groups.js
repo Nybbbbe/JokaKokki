@@ -4,14 +4,11 @@ import VoiceControl from "../../voicecontrol";
 import "./Groups.css";
 import { useHistory } from "react-router-dom";
 import Filter from "../filter/Filter";
-
-import FilterHandler from "../../filterhandler";
-
 function Groups() {
     const groups = Server.getGroups();
     const history = useHistory();
 
-    const [filter, setFilter] = useState(FilterHandler.currentFilter);
+    const [filter, setFilter] = useState("");
 
     const routeToGroup = (groupClass) => {
         history.push("/courses:" + groupClass);
@@ -23,10 +20,8 @@ function Groups() {
 
     const filteredGroups = useMemo(() => {
         return groups.filter((group) => {
-            const courses = Server.getCoursesByGroup(group.class);
-            return courses.some((course) => FilterHandler.shouldShowCourse(course));
+            return group.title.toLowerCase().includes(filter.toLowerCase());
         });
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [groups, filter]);
 
     return (
