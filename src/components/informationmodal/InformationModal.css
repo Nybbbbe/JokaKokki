@@ -1,0 +1,32 @@
+.modal {
+    display: block;
+    position: fixed;
+}
+
+.close {
+    border: none;
+    background: none;
+}
+
+.modal-body {
+    text-align: start;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: 100;
+    background-color: black;
+}
+
+.btn {
+    min-width: 100px;
+}
+
+p {
+    font-size: 20px;
+}
