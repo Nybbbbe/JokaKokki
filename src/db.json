@@ -4,7 +4,9 @@
             "id": "1",
             "title": "Pasta ruokien alkeet",
             "price": "2.99",
-            "description": "Tällä kursilla opit tekemään tuorepasta ruokia aivan nollasta. Kurssi lähtee käyntiin tuorepastan taikinan teosta ja jatkuu sitten pasta ruokien tekoon kuten carbonara ja bolognese. Tämän kurssiin jälkeen tulet olemaan oikea mestari pasta kokki!",
+            "description": [
+                { "type": "desc", "src": "Tällä kursilla opit tekemään tuorepasta ruokia aivan nollasta. Kurssi lähtee käyntiin tuorepastan taikinan teosta ja jatkuu sitten pasta ruokien tekoon kuten carbonara ja bolognese. Tämän kurssiin jälkeen tulet olemaan oikea mestari pasta kokki!" }
+            ],
             "img": "https://loveincorporated.blob.core.windows.net/contentimages/fullsize/33683db6-adee-474a-bff1-4d73d5d7bf94-how-to-make-fresh-homemade-pasta.jpg",
             "classifications": ["classics"],
             "categories": ["pasta", "helppo"]
@@ -13,7 +15,9 @@
             "id": "2",
             "title": "Salaattien salat",
             "price": "2.99",
-            "description": "Salaatteja joka lähtöön",
+            "description": [
+                { "type": "desc", "src": "Salaatteja joka lähtöön"}
+            ],
             "img": "https://cdn-rdb.arla.com/Files/arla-se/1776727224/0ec3cb10-58e6-4a3f-99de-193e9c1e5bb9.jpg?mode=crop&w=1200&h=630&scale=both&format=jpg&quality=80&ak=f525e733&hm=35af1404",
             "classifications": ["sport"],
             "categories": ["salaattia", "helppo", "vegaani", "vege"]
@@ -22,7 +26,9 @@
             "id": "3",
             "title": "Viinit ruoassa",
             "price": "2.99",
-            "description": "Opit kaatamaan viiniä ruokaan",
+            "description": [
+                { "type": "desc", "src": "Opit kaatamaan viiniä ruokaan"}
+            ],
             "img": "https://www.yoranchsteakhouse.com/wp-content/uploads/2019/01/wine-and-steak-at-a-downtown-steakhouse-900x644.jpg",
             "classifications": ["finedining"],
             "categories": ["haastava"]
@@ -31,7 +37,9 @@
             "id": "4",
             "title": "Perunan perusteet",
             "price": "2.99",
-            "description": "Oletko aina halunnut syödä perunoita? Kukapa ei olisikaan. Perunat on pyöreitä tai soikeita herkullisia maan antineita, jota Luontoäiti meille armahtaa. Voimme kavaa niitä maan alta kyuin myyrät ja saada niistä ravintoa ja energiaa. Tällä kurssilla opit niiden kaikki salat niin valmistamisesta kypsennykseen ja valmiisiin ruokiin.",
+            "description": [
+                { "type": "desc", "src": "Oletko aina halunnut syödä perunoita? Kukapa ei olisikaan. Perunat on pyöreitä tai soikeita herkullisia maan antineita, jota Luontoäiti meille armahtaa. Voimme kavaa niitä maan alta kyuin myyrät ja saada niistä ravintoa ja energiaa. Tällä kurssilla opit niiden kaikki salat niin valmistamisesta kypsennykseen ja valmiisiin ruokiin."}
+            ],
             "img": "https://satokausi.fi/wp-content/uploads/2019/03/peruna2.jpg",
             "classifications": ["classics"],
             "categories": ["vegaani", "vege", "helppo"]
@@ -40,7 +48,9 @@
             "id": "5",
             "title": "Vuokaruat",
             "price": "2.99",
-            "description": "Tällä kurssilla opit tekemään herkullisia mutta helppoja ruokia heittämällä ainekset kasaan pannulle ja tuikkaamalla pannun uuniin. Kinkkukiusaus, makaroonilaatikko, kebabkiusaus, pyttipannu, koulukiusaus, täältä löydät ne kaikki! Älä vain missään nimessä jaa reseptejä muille tai lakitiimimme ottaa yhteyttä. Bon apetit!",
+            "description": [
+                { "type": "desc", "src": "Tällä kurssilla opit tekemään herkullisia mutta helppoja ruokia heittämällä ainekset kasaan pannulle ja tuikkaamalla pannun uuniin. Kinkkukiusaus, makaroonilaatikko, kebabkiusaus, pyttipannu, koulukiusaus, täältä löydät ne kaikki! Älä vain missään nimessä jaa reseptejä muille tai lakitiimimme ottaa yhteyttä. Bon apetit!"}
+            ],
             "img": "https://www.maaseuduntulevaisuus.fi/image/policy:1.784745:1578574703/image.jpg?f=default&q=0.9&$p$f$q=fda4bc7&w=754&$w=72c0eb5",
             "classifications": ["classics"],
             "categories": ["helppo"]
@@ -49,7 +59,9 @@
             "id": "6",
             "title": "Haastavat pastaruoat",
             "price": "2.99",
-            "description": "Tämä kurssi on jatkoa kurssille ‘Pastaruokien alkeet’, eli käy ensin se kurssi, jos olet aloittelija. Toisaalta jos taitoa on niin antaa mennä! Tällä kurssilla opit syömään pastaa monessa muodossa: keitettynä, paistettuna, grillattuna, raakana ja mikrossa valmistettuna. Hyppää kurssille ja nauti!",
+            "description": [
+                { "type": "desc", "src": "Tämä kurssi on jatkoa kurssille ‘Pastaruokien alkeet’, eli käy ensin se kurssi, jos olet aloittelija. Toisaalta jos taitoa on niin antaa mennä! Tällä kurssilla opit syömään pastaa monessa muodossa: keitettynä, paistettuna, grillattuna, raakana ja mikrossa valmistettuna. Hyppää kurssille ja nauti!"}
+            ],
             "img": "https://assets.bonappetit.com/photos/5de7e495b79e20000879d72a/1:1/w_2560%2Cc_limit/Amiel-Lobster-Pasta-Lede-1.jpg",
             "classifications": ["classics"],
             "categories": ["pasta", "haastava"]
@@ -58,7 +70,9 @@
             "id": "7",
             "title": "Hullun hyvät pannarit",
             "price": "2.99",
-            "description": "Oletko koskaan nähnyt elokuvissa kun pöytään tuodaan herkullinen läjä pannareia ja miettinyt että näyttääpä hyvältä? Jos olet niin olet oikeass paikassa!",
+            "description": [
+                { "type": "desc", "src": "Oletko koskaan nähnyt elokuvissa kun pöytään tuodaan herkullinen läjä pannareia ja miettinyt että näyttääpä hyvältä? Jos olet niin olet oikeass paikassa!"}
+            ],
             "img": "https://media.eggs.ca/assets/RecipePhotos/_resampled/FillWyIxMjgwIiwiNzIwIl0/Fluffy-Pancakes-New-CMS.jpg",
             "classifications": ["brunch"],
             "categories": ["vege", "vegaani"]

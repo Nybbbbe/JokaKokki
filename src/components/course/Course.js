@@ -5,6 +5,7 @@ import VoiceControl from '../../voicecontrol';
 import { useHistory, useParams } from 'react-router-dom';
 import BuyButton from '../buybutton/BuyButton';
 import ConfirmationModal from '../confirmationmodal/ConfirmationModal';
+import ContentContainer from "../content/ContentContainer";
 
 const Course = () => {
     const params = useParams();
@@ -38,7 +39,11 @@ const Course = () => {
                     <BuyButton course={course} trial={trial} endTrial={endTrial} voicecontrol={true}/>
                 </div>
                 
-                <p className="description">{course.description}</p>
+                <div className="description-container">
+                    {course.description.map((cont, i) => {
+                        return <ContentContainer key={i} type={cont.type} src={cont.src} />;
+                    })}
+                </div>
                 <ul className="list-group">
                     {
                         episodes.map(episode => {
