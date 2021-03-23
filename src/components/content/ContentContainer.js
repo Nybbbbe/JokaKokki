@@ -4,6 +4,7 @@ import Image from './Image';
 import SubTitle from './SubTitle';
 import Video from './Video';
 import Timer from './Timer';
+import List from './List';
 
 function ContentContainer({type, src}) {
     switch (type) {
@@ -31,7 +32,9 @@ function ContentContainer({type, src}) {
         case "subtitle4": {
             return <SubTitle src={src}  size={5}/>
         }
-
+        case "list": {
+            return <List src={src}/>
+        }
         default: {
             return <Description src={src}/>
         }
