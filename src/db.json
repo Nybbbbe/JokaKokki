@@ -394,7 +394,7 @@
                 { "type": "subtitle", "src": "Valmistelu" },
                 { "type": "desc", "src": "Ennen kuin aloitetaan itse ruoanlaitto, niin alla olevilta videoilta löytyy vinkkejä helpottamaan Pad Thain valmistusta." },
                 { "type": "subtitle2", "src": "Leikkaustekniikka:" },
-                { "type": "video", "src": "https://youtu.be/KIjZLfbbb94" },
+                { "type": "video", "src": "https://youtu.be/KHyxwPeXQqA" },
                 { "type": "subtitle2", "src": "Kokkausvinkki:" },
                 { "type": "video", "src": "https://youtu.be/st1aUARMyRU" },
                 { "type": "subtitle4", "src": "Ohjeet:" },
@@ -411,7 +411,7 @@
                 { "type": "video", "src": "https://youtu.be/xpm2XEcx7CE" },
                 { "type": "subtitle4", "src": "Ohjeet:" },
                 { "type": "desc", "src": "1. Lämmitä pannu kuumaksi ja pistä pannulle öljyä. Lisää kuumalle pannulle kanat. Paista kanoja siihen asti, että palat ovat saaneet joka puolelle kevyen kultaiset paistopinnat. Halutessasi voit lisätä kanojen päälle mausteita, kuten pippurijauhetta tai paprikajauhetta. Tämän jälkeen nosta kanat pois pannulta." },
-                { "type": "desc", "src": "2. Kanojen paistuessa ehdit tehdä kastikkeen. Kastike kannattaa tehdä pieneen kulhoon. Sekoita ensin keskenään soija, valkoviinietikka ja kalakastike. Tämän jälkeen lisää joukkoon tummasokeri sekä purista kaksi limeä." },
+                { "type": "desc", "src": "2. Kanojen paistuessa ehdit tehdä kastikkeen. Kastike kannattaa tehdä pieneen kulhoon. Sekoita ensin keskenään soija, riisiviinietikka ja kalakastike. Tämän jälkeen lisää joukkoon tummasokeri sekä purista kaksi limeä." },
                 { "type": "desc", "src": "3. Lisää öljyä tarvittaessa lisää pannulle ja paista kasvikset (valkosipuli, paprikat, porkkanat ja kevätsipuli). Paista noin 3 minuuttia." },
                 { "type": "desc", "src": "4. Kasvisten paistuessa lisää nuudelit kiehuvaan veteen. On hyvin tärkeää, että nuudeleita keitetään vain maksimissaan 3 minuuttia, joten laita ajastin päälle. Kun 3 minuuttia on kulunut, poista ylimääräinen vesi kaatamalla nuudelit lävikön läpi." },
                 { "type": "desc", "src": "5. Tämän jälkeen lisää kananmunat pannulle. Tee ensin pannulla kasvisten keskelle aukko. Lisää kananmunaseos aukkoon ja sekoita sitä, jotta muna ei hyydy yhdeksi isoksi palaksi. Paista ensin munaa noin 1-2 minuuttia pannun keskellä, jonka jälkeen voit sekoittaa kasvikset munan kanssa. Tämä johtuu siitä, että kananmunaan halutaan paistopintaa." },
@@ -431,7 +431,7 @@
                 { "type": "subtitle4", "src": "Ohjeet:" },
                 { "type": "desc", "src": "1. Leikkaa lime ohuiksi viipaleiksi ja lisää ruokaan" },
                 { "type": "desc", "src": "2. Lisää pavunidut, korianteri ja cashew-pähkinät." },
-                { "type": "desc", "src": "3. Maista ruokaa ja lisää tarvittaessa chiliä tai kastiketta (soija, tummasokeri, kalakastike, valkoviinietikka)" },
+                { "type": "desc", "src": "3. Maista ruokaa ja lisää tarvittaessa chiliä tai kastiketta (soija, tummasokeri, kalakastike, riisiviinietikka)" },
                 { "type": "subtitle2", "src": "Seuraavaksi pääset nauttimaan ruoasta! Kiitos seurasta ja ensi kertaan. " },
                 { "type": "desc", "src": "Seuraavassa jaksossa päästään tekemään Satay-kanaa. Opit tekemään satay-kastiketta, joka sopii monien erilaisten raaka-aineiden kanssa yhteen. Satay-ruuat ovatkin merkittävä osa thairuokaa." }
             ]
