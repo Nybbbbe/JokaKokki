@@ -2,10 +2,10 @@
     "courses": [
         {
             "id": "1",
-            "title": "Pasta ruokien alkeet",
+            "title": "Pastaruokien alkeet",
             "price": "2.99",
             "description": [
-                { "type": "desc", "src": "Tällä kursilla opit tekemään tuorepasta ruokia aivan nollasta. Kurssi lähtee käyntiin tuorepastan taikinan teosta ja jatkuu sitten pasta ruokien tekoon kuten carbonara ja bolognese. Tämän kurssiin jälkeen tulet olemaan oikea mestari pasta kokki!" }
+                { "type": "desc", "src": "Tällä kursilla opit tekemään tuorepastaruokia aivan nollasta. Kurssi lähtee käyntiin tuorepastan taikinan teosta ja jatkuu pastaruokien tekoon, kuten carbonara ja bolognese. Tämän kurssin jälkeen tulet olemaan oikea mestaripastakokki!" }
             ],
             "img": "https://loveincorporated.blob.core.windows.net/contentimages/fullsize/33683db6-adee-474a-bff1-4d73d5d7bf94-how-to-make-fresh-homemade-pasta.jpg",
             "classifications": ["classics"],
@@ -20,7 +20,7 @@
             ],
             "img": "https://cdn-rdb.arla.com/Files/arla-se/1776727224/0ec3cb10-58e6-4a3f-99de-193e9c1e5bb9.jpg?mode=crop&w=1200&h=630&scale=both&format=jpg&quality=80&ak=f525e733&hm=35af1404",
             "classifications": ["sport"],
-            "categories": ["salaattia", "helppo", "vegaani", "vege"]
+            "categories": ["salaatti", "helppo", "vegaani", "vege"]
         },
         {
             "id": "3",
@@ -38,7 +38,7 @@
             "title": "Perunan perusteet",
             "price": "2.99",
             "description": [
-                { "type": "desc", "src": "Oletko aina halunnut syödä perunoita? Kukapa ei olisikaan. Perunat on pyöreitä tai soikeita herkullisia maan antineita, jota Luontoäiti meille armahtaa. Voimme kavaa niitä maan alta kyuin myyrät ja saada niistä ravintoa ja energiaa. Tällä kurssilla opit niiden kaikki salat niin valmistamisesta kypsennykseen ja valmiisiin ruokiin."}
+                { "type": "desc", "src": "Oletko aina halunnut syödä perunoita? Kukapa ei olisikaan. Perunat ovat pyöreitä tai soikeita herkullisia maan antineita, joita Luontoäiti meille armahtaa. Voimme kaivaa niitä maan alta kuin myyrät ja saada niistä ravintoa ja energiaa. Tällä kurssilla opit niiden kaikki salat niin valmistamisesta kypsennykseen ja valmiisiin ruokiin."}
             ],
             "img": "https://satokausi.fi/wp-content/uploads/2019/03/peruna2.jpg",
             "classifications": ["classics"],
@@ -71,7 +71,7 @@
             "title": "Hullun hyvät pannarit",
             "price": "2.99",
             "description": [
-                { "type": "desc", "src": "Oletko koskaan nähnyt elokuvissa kun pöytään tuodaan herkullinen läjä pannareia ja miettinyt että näyttääpä hyvältä? Jos olet niin olet oikeass paikassa!"}
+                { "type": "desc", "src": "Oletko koskaan nähnyt elokuvissa kun pöytään tuodaan herkullinen läjä pannareia ja miettinyt, että näyttääpä hyvältä? Jos olet, niin olet oikeassa paikassa!"}
             ],
             "img": "https://media.eggs.ca/assets/RecipePhotos/_resampled/FillWyIxMjgwIiwiNzIwIl0/Fluffy-Pancakes-New-CMS.jpg",
             "classifications": ["brunch"],
@@ -95,7 +95,7 @@
                 { "type": "desc", "src": "Miten minun tulisi tehdä ruokaa samalla kun katson videoita ja luen ohjeita?\nUseiden vuosien kokemuksesta olemme oppineet, että ruoanlaiton oppii parhaiten ruokaa tekemällä! Tämän vuoksi olemme suunnitelleet tavan, jolla voit tehdä ruokaa helposti samanaikaisesti, kun luet ohjeita ja katsot opetusvideoita. Tämä tapahtuu käytännössä puheohjauksen avulla!" },
                 { "type": "desc", "src": "Mikäli haluat käyttää puheohjausta, etkä ole vielä valinnut omasta profiilistasi kädetöntä tilaa päälle, paina ruudun alareunasta oman profiilisi ikonia ja laita oma profiili -näkymän alareunasta kädetön tila päälle! Tämän jälkeen voit liikkua sovelluksessa käyttämällä äänikomentoja sen sijaan, että joutuisit kesken ruoanlaiton koskettamaan puhelintasi. Tarkat ohjeet puheohjaukseen käyttämiseen löydät alanavigaation profiilista." },
                 { "type": "desc", "src": "Mikäli käytät puheohjausta, suosittelemme, että asetat puhelimesi keittiössä paikkaan, jossa se ei mene likaiseksi, mutta pystyt antamaan sille komentoja puheellasi kesken ruoanlaiton ja näet lukemaan näytöltä yksityiskohtaisia ohjeita ruoanlaiton eri vaiheissa." },
-                { "type": "desc", "src": "Mikäli et käytä puheohjausta, aseta puhelin keittiössäsi paikkaan, jossa se ei mene likaiseksi, mutta näet lukemaan näytöltä yksityiskohtaisia ohjeita ruoanlaiton eri vaiheissa. Suosittelemme myös asettamaan puhelimen viereen valmiiksi liinan, johon voit pyyhkiä käsiäsi ennen kuin kosketat näyttöä! Tämän lisäksi suosittelemme desinfioimaan puhelimesi näytön ennen ruoanlaiton aloittamista esimerkiksi desinfiontiliinalla." },
+                { "type": "desc", "src": "Mikäli et käytä puheohjausta, aseta puhelin keittiössäsi paikkaan, jossa se ei sotkeennu, mutta näet lukemaan näytöltä yksityiskohtaisia ohjeita ruoanlaiton eri vaiheissa. Suosittelemme myös asettamaan puhelimen viereen valmiiksi liinan, johon voit pyyhkiä käsiäsi ennen kuin kosketat näyttöä! Tämän lisäksi suosittelemme desinfioimaan puhelimesi näytön ennen ruoanlaiton aloittamista esimerkiksi desinfiontiliinalla." },
                 { "type": "subtitle2", "src": "Lisätietoja"},
                 { "type": "subtitle4", "src": "Annoshinnat jaksoittain:"},
                 { "type": "desc", "src": "Pad Thai 6,5 €/ annos\nSatay Kana 7,2 €/ annos\nTom Yum Goong 5,8 €/ annos\n" },
@@ -124,7 +124,7 @@
             "id": "pasta1",
             "parentId": "1",
             "episodeNumber": "1",
-            "title": "Pasta taikina"
+            "title": "Pastataikina"
         },
         {
             "id": "pasta2",
@@ -459,7 +459,7 @@
         {
             "id": "group4",
             "class": "sport",
-            "title": "Sporttiruoka",
+            "title": "Sporttiruoat",
             "img": "https://www.esticastresearch.com/wp-content/uploads/2020/03/sports-nutrition-Market.jpg"
         },
         {
@@ -469,5 +469,5 @@
             "img": "https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/00/a0000460/img/basic/a0000460_main.jpg?20170412181434&q=80&rw=750&rh=536"
         }
     ],
-    "categories": ["pasta", "helppo", "salaattia", "vegaani", "vege", "haastava", "eksoottinen", "arki", "nopea", "halpa", "perusteet", "thai-ruoka", "pad thai", "satay kana", "tom yum goong"]
+    "categories": ["pasta", "helppo", "salaatti", "vegaani", "vege", "haastava", "eksoottinen", "arki", "nopea", "halpa", "perusteet", "thai-ruoka", "pad thai", "satay kana", "tom yum goong"]
 }
