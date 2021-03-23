@@ -20,9 +20,18 @@ function ContentContainer({type, src}) {
             return <Timer src={src}/>
         }
         case "subtitle": {
-            
-            return <SubTitle src={src}/>
+            return <SubTitle src={src} size={2}/>
         }
+        case "subtitle2": {
+            return <SubTitle src={src}  size={3}/>
+        }
+        case "subtitle3": {
+            return <SubTitle src={src}  size={4}/>
+        }
+        case "subtitle4": {
+            return <SubTitle src={src}  size={5}/>
+        }
+
         default: {
             return <Description src={src}/>
         }
