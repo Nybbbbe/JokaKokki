@@ -18,7 +18,11 @@ function Video({ src }) {
         }
     };
 
-    return <ReactPlayer url={src} width="100%" config={config} />;
+    return (
+        <div className="mt-4 mb-4">
+            <ReactPlayer url={src} width="100%" config={config} />
+        </div>
+    )
 }
 
 export default Video;

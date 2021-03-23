@@ -76,6 +76,34 @@
             "img": "https://media.eggs.ca/assets/RecipePhotos/_resampled/FillWyIxMjgwIiwiNzIwIl0/Fluffy-Pancakes-New-CMS.jpg",
             "classifications": ["brunch"],
             "categories": ["vege", "vegaani"]
+        },
+        {
+            "id": "8",
+            "title": "Thai-ruokien alkeet",
+            "price": "2.99",
+            "description": [
+                { "type": "subtitle", "src": "Tällä kurssilla hyppäät meidän kanssa junaan kohti Thai-ruokien saloja. Alta löydät kurssin perustiedot, esittelyvideon, ohjeet kurssin suorittamiseen sekä lisätiedot."},
+                { "type": "subtitle", "src": "Avainsanat:"},
+                { "type": "desc", "src": "Arki, Nopea, Halpa, Perusteet, Thai-ruoka, Pad Thai, Satay Kana, Tom Yum Goong" },
+                { "type": "subtitle", "src": "Kuvaus:"},
+                { "type": "desc", "src": "Tällä kurssilla tulet tekemään 3 todella perinteistä thaimaalaista ruokaa: Pad Thai wokin, Satay kanaa sekä Tom Yum Goong keiton. Kurssilla lähdetään liikkeelle perusteista, joten voit käyttää hyödyksi tällä kurssilla opittuja taitoja myös seuraavilla Thai-ruoat kursseilla. Jokainen kurssin jakso sisältää täydelliset ohjeet jaksossa esiteltävän ruoan valmistukseen." },
+                { "type": "video", "src": "https://youtu.be/fxYJ4A_uSJY" },
+                { "type": "subtitle", "src": "Kurssin suorittaminen:"},
+                { "type": "desc", "src": "Jaksojen rakenne:\nJaksot koostuvat sivuista, jotka ovat etenevät aikajärjestyksessä ruoanlaittosi kanssa. Jokaisen jakson ensimmäinen sivu sisältää ohjeita kyseessä olevan ruoan raaka-aineiden hankintaan. Kun päätät suorittaa jakson, katso siis sen ensimmäinen sivu ennen raaka-aineiden hankintaa! Esimerkiksi Pad Thai kurssi sisältää sivut: raaka-aineet, valmistelu, wokkaaminen ja viimeistely." },
+                { "type": "desc", "src": "Sivut puolestaan koostuvat videoista sekä yksityiskohtaisista ohjeista sillä sivulla käsiteltävien asioiden tekemiseen. Jokaisella sivulla on ensimmäiseksi video, jossa esitellään tarkkoja käytännön ohjeita vaativia osa-alueita. Sivun alaosasta, videoiden alapuolelta, löydät yksityiskohtaiset ohjeet sivulla käsiteltävän asian tekemiseen. Videot eivät siis sisällä kaikkia ohjeita, joten muista katsoa sivun alaosassa olevat ohjeet videoiden lisäksi!" },
+                { "type": "desc", "src": "Miten minun tulisi tehdä ruokaa samalla kun katson videoita ja luen ohjeita?\nUseiden vuosien kokemuksesta olemme oppineet, että ruoanlaiton oppii parhaiten ruokaa tekemällä! Tämän vuoksi olemme suunnitelleet tavan, jolla voit tehdä ruokaa helposti samanaikaisesti, kun luet ohjeita ja katsot opetusvideoita. Tämä tapahtuu käytännössä puheohjauksen avulla!" },
+                { "type": "desc", "src": "Mikäli haluat käyttää puheohjausta, etkä ole vielä valinnut omasta profiilistasi kädetöntä tilaa päälle, paina ruudun alareunasta oman profiilisi ikonia ja laita oma profiili -näkymän alareunasta kädetön tila päälle! Tämän jälkeen voit liikkua sovelluksessa käyttämällä äänikomentoja sen sijaan, että joutuisit kesken ruoanlaiton koskettamaan puhelintasi. Tarkat ohjeet puheohjaukseen käyttämiseen löydät alanavigaation profiilista." },
+                { "type": "desc", "src": "Mikäli käytät puheohjausta, suosittelemme, että asetat puhelimesi keittiössä paikkaan, jossa se ei mene likaiseksi, mutta pystyt antamaan sille komentoja puheellasi kesken ruoanlaiton ja näet lukemaan näytöltä yksityiskohtaisia ohjeita ruoanlaiton eri vaiheissa." },
+                { "type": "desc", "src": "Mikäli et käytä puheohjausta, aseta puhelin keittiössäsi paikkaan, jossa se ei mene likaiseksi, mutta näet lukemaan näytöltä yksityiskohtaisia ohjeita ruoanlaiton eri vaiheissa. Suosittelemme myös asettamaan puhelimen viereen valmiiksi liinan, johon voit pyyhkiä käsiäsi ennen kuin kosketat näyttöä! Tämän lisäksi suosittelemme desinfioimaan puhelimesi näytön ennen ruoanlaiton aloittamista esimerkiksi desinfiontiliinalla." },
+                { "type": "subtitle", "src": "Lisätietoja"},
+                { "type": "desc", "src": "Annoshinnat jaksoittain:\nPad Thai 6,5 €/ annos\nSatay Kana 7,2 €/ annos\nTom Yum Goong 5,8 €/ annos\n" },
+                { "type": "desc", "src": "Vaaditut taidot:\nTällä kurssilla ei vaadita mitään ennakkotietoja." },
+                { "type": "desc", "src": "Vaaditut välineet:\nKattila\nWokkipannu (tavallinen paistinpannu toimii myös)\nLiesi\nLeikkuuveitsi sekä -alusta\n" },
+                { "type": "desc", "src": "Ajankäyttö jaksoittain:\nPad Thai noin 25 minuuttia\nSatay Kana noin 35 minuuttia\nTom Yum Goong noin 30 minuuttia" }
+            ],
+            "img": "https://media.eggs.ca/assets/RecipePhotos/_resampled/FillWyIxMjgwIiwiNzIwIl0/Fluffy-Pancakes-New-CMS.jpg",
+            "classifications": ["thai"],
+            "categories": ["eksoottinen", "arki", "nopea", "halpa", "perusteet", "thai-ruoka", "pad thai", "satay kana", "tom yum goong"]
         }
     ],
 
@@ -146,6 +174,24 @@
             "parentId": "6",
             "episodeNumber": "1",
             "title": "One Pot -pasta"
+        },
+        {
+            "id": "thaialkeet1",
+            "parentId": "8",
+            "episodeNumber": "1",
+            "title": "Pad Thai"
+        },
+        {
+            "id": "thaialkeet2",
+            "parentId": "8",
+            "episodeNumber": "2",
+            "title": "Satay Kana"
+        },
+        {
+            "id": "thaialkeet3",
+            "parentId": "8",
+            "episodeNumber": "3",
+            "title": "Tom Yum Goong"
         }
     ],
     "episodeContents": [
@@ -315,6 +361,18 @@
                 { "type": "desc", "src": "Oho, joku söy jo pastan." },
                 { "type": "timer", "src": "5" }
             ]
+        },
+        {
+            "id": "padthai1page1",
+            "parentId": "thaialkeet1",
+            "pageNumber": "1",
+            "content": [
+                { "type": "subtitle", "src": "Osa 1" },
+                { "type": "video", "src": "https://www.youtube.com/watch?v=I6uQL6pAUWk" },
+                { "type": "desc", "src": "Step 1. boil pasta" },
+                { "type": "timer", "src": "5" },
+                { "type": "desc", "src": "Step 2. boil more pasta" }
+            ]
         }
     ],
     "groups": [
@@ -341,7 +399,13 @@
             "class": "sport",
             "title": "Sporttiruoka",
             "img": "https://www.esticastresearch.com/wp-content/uploads/2020/03/sports-nutrition-Market.jpg"
+        },
+        {
+            "id": "group5",
+            "class": "thai",
+            "title": "Thai-ruoat",
+            "img": "https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/00/a0000460/img/basic/a0000460_main.jpg?20170412181434&q=80&rw=750&rh=536"
         }
     ],
-    "categories": ["pasta", "helppo", "salaattia", "vegaani", "vege", "haastava"]
+    "categories": ["pasta", "helppo", "salaattia", "vegaani", "vege", "haastava", "eksoottinen", "arki", "nopea", "halpa", "perusteet", "thai-ruoka", "pad thai", "satay kana", "tom yum goong"]
 }

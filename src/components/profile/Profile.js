@@ -25,21 +25,25 @@ const Profile = () => {
             <div className="page-title">
                 <h1>Profiili</h1>
             </div>
-            <div id="content" className="component-content-container">
-                <h3 className="user-info">Nimi: { user.name }</h3>
-                <h3 className="user-info">Email: { user.email }</h3>
-                {
-                // eslint-disable-next-line jsx-a11y/img-redundant-alt
-                }<img className="profile-picture" src={ user.img } alt="profile-picture"/>
+            <div id="content" className="profile-content-container">
+                <div className="d-flex flex-column justify-content-center ">
+                    <h3 className="user-info">Nimi: { user.name }</h3>
+                    <h3 className="user-info">Email: { user.email }</h3>
+                    {
+                    // eslint-disable-next-line jsx-a11y/img-redundant-alt
+                    }<img className="profile-picture" src={ user.img } alt="profile-picture"/>
+                </div>
+                <div class="bottom-content">
+                    <button type="button" className="btn btn-secondary relative mb-3" onClick={() => setShowModal(true)}>Ääniohjauksen ohjeet</button>
+                    <FormGroup>
+                        <FormControlLabel
+                            control={<Switch checked={checked} onChange={toggleChecked} />}
+                            label="Ääniohjaus"
+                        />
+                    </FormGroup>
+                </div>
             </div>
-            <button type="button" className="btn btn-secondary relative" onClick={() => setShowModal(true)}>Ääniohjauksen ohjeet</button>
             { showModal ? <InformationModal close={closeModal}/> : null }
-            <FormGroup>
-                <FormControlLabel
-                    control={<Switch checked={checked} onChange={toggleChecked} />}
-                    label="Kädetön tila päällä"
-                />
-            </FormGroup>
         </>
     )
 }
