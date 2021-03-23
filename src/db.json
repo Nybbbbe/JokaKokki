@@ -83,25 +83,30 @@
             "price": "2.99",
             "description": [
                 { "type": "subtitle", "src": "Tällä kurssilla hyppäät meidän kanssa junaan kohti Thai-ruokien saloja. Alta löydät kurssin perustiedot, esittelyvideon, ohjeet kurssin suorittamiseen sekä lisätiedot."},
-                { "type": "subtitle", "src": "Avainsanat:"},
+                { "type": "subtitle4", "src": "Avainsanat:"},
                 { "type": "desc", "src": "Arki, Nopea, Halpa, Perusteet, Thai-ruoka, Pad Thai, Satay Kana, Tom Yum Goong" },
-                { "type": "subtitle", "src": "Kuvaus:"},
+                { "type": "subtitle4", "src": "Kuvaus:"},
                 { "type": "desc", "src": "Tällä kurssilla tulet tekemään 3 todella perinteistä thaimaalaista ruokaa: Pad Thai wokin, Satay kanaa sekä Tom Yum Goong keiton. Kurssilla lähdetään liikkeelle perusteista, joten voit käyttää hyödyksi tällä kurssilla opittuja taitoja myös seuraavilla Thai-ruoat kursseilla. Jokainen kurssin jakso sisältää täydelliset ohjeet jaksossa esiteltävän ruoan valmistukseen." },
                 { "type": "video", "src": "https://youtu.be/fxYJ4A_uSJY" },
-                { "type": "subtitle", "src": "Kurssin suorittaminen:"},
-                { "type": "desc", "src": "Jaksojen rakenne:\nJaksot koostuvat sivuista, jotka ovat etenevät aikajärjestyksessä ruoanlaittosi kanssa. Jokaisen jakson ensimmäinen sivu sisältää ohjeita kyseessä olevan ruoan raaka-aineiden hankintaan. Kun päätät suorittaa jakson, katso siis sen ensimmäinen sivu ennen raaka-aineiden hankintaa! Esimerkiksi Pad Thai kurssi sisältää sivut: raaka-aineet, valmistelu, wokkaaminen ja viimeistely." },
+                { "type": "subtitle2", "src": "Kurssin suorittaminen:"},
+                { "type": "subtitle4", "src": "Jaksojen rakenne:"},
+                { "type": "desc", "src": "Jaksot koostuvat sivuista, jotka etenevät aikajärjestyksessä ruoanlaittosi kanssa. Jokaisen jakson ensimmäinen sivu sisältää ohjeita kyseessä olevan ruoan raaka-aineiden hankintaan. Kun päätät suorittaa jakson, katso siis sen ensimmäinen sivu ennen raaka-aineiden hankintaa! Esimerkiksi Pad Thai kurssi sisältää sivut: raaka-aineet, valmistelu, wokkaaminen ja viimeistely." },
                 { "type": "desc", "src": "Sivut puolestaan koostuvat videoista sekä yksityiskohtaisista ohjeista sillä sivulla käsiteltävien asioiden tekemiseen. Jokaisella sivulla on ensimmäiseksi video, jossa esitellään tarkkoja käytännön ohjeita vaativia osa-alueita. Sivun alaosasta, videoiden alapuolelta, löydät yksityiskohtaiset ohjeet sivulla käsiteltävän asian tekemiseen. Videot eivät siis sisällä kaikkia ohjeita, joten muista katsoa sivun alaosassa olevat ohjeet videoiden lisäksi!" },
                 { "type": "desc", "src": "Miten minun tulisi tehdä ruokaa samalla kun katson videoita ja luen ohjeita?\nUseiden vuosien kokemuksesta olemme oppineet, että ruoanlaiton oppii parhaiten ruokaa tekemällä! Tämän vuoksi olemme suunnitelleet tavan, jolla voit tehdä ruokaa helposti samanaikaisesti, kun luet ohjeita ja katsot opetusvideoita. Tämä tapahtuu käytännössä puheohjauksen avulla!" },
                 { "type": "desc", "src": "Mikäli haluat käyttää puheohjausta, etkä ole vielä valinnut omasta profiilistasi kädetöntä tilaa päälle, paina ruudun alareunasta oman profiilisi ikonia ja laita oma profiili -näkymän alareunasta kädetön tila päälle! Tämän jälkeen voit liikkua sovelluksessa käyttämällä äänikomentoja sen sijaan, että joutuisit kesken ruoanlaiton koskettamaan puhelintasi. Tarkat ohjeet puheohjaukseen käyttämiseen löydät alanavigaation profiilista." },
                 { "type": "desc", "src": "Mikäli käytät puheohjausta, suosittelemme, että asetat puhelimesi keittiössä paikkaan, jossa se ei mene likaiseksi, mutta pystyt antamaan sille komentoja puheellasi kesken ruoanlaiton ja näet lukemaan näytöltä yksityiskohtaisia ohjeita ruoanlaiton eri vaiheissa." },
                 { "type": "desc", "src": "Mikäli et käytä puheohjausta, aseta puhelin keittiössäsi paikkaan, jossa se ei mene likaiseksi, mutta näet lukemaan näytöltä yksityiskohtaisia ohjeita ruoanlaiton eri vaiheissa. Suosittelemme myös asettamaan puhelimen viereen valmiiksi liinan, johon voit pyyhkiä käsiäsi ennen kuin kosketat näyttöä! Tämän lisäksi suosittelemme desinfioimaan puhelimesi näytön ennen ruoanlaiton aloittamista esimerkiksi desinfiontiliinalla." },
-                { "type": "subtitle", "src": "Lisätietoja"},
-                { "type": "desc", "src": "Annoshinnat jaksoittain:\nPad Thai 6,5 €/ annos\nSatay Kana 7,2 €/ annos\nTom Yum Goong 5,8 €/ annos\n" },
-                { "type": "desc", "src": "Vaaditut taidot:\nTällä kurssilla ei vaadita mitään ennakkotietoja." },
-                { "type": "desc", "src": "Vaaditut välineet:\nKattila\nWokkipannu (tavallinen paistinpannu toimii myös)\nLiesi\nLeikkuuveitsi sekä -alusta\n" },
-                { "type": "desc", "src": "Ajankäyttö jaksoittain:\nPad Thai noin 25 minuuttia\nSatay Kana noin 35 minuuttia\nTom Yum Goong noin 30 minuuttia" }
+                { "type": "subtitle2", "src": "Lisätietoja"},
+                { "type": "subtitle4", "src": "Annoshinnat jaksoittain:"},
+                { "type": "desc", "src": "Pad Thai 6,5 €/ annos\nSatay Kana 7,2 €/ annos\nTom Yum Goong 5,8 €/ annos\n" },
+                { "type": "subtitle4", "src": "Vaaditut taidot:"},
+                { "type": "desc", "src": "Tällä kurssilla ei vaadita mitään ennakkotietoja." },
+                { "type": "subtitle4", "src": "Vaaditut välineet:"},
+                { "type": "desc", "src": "Kattila\nWokkipannu (tavallinen paistinpannu toimii myös)\nLiesi\nLeikkuuveitsi sekä -alusta\n" },
+                { "type": "subtitle4", "src": "Ajankäyttö jaksoittain:"},
+                { "type": "desc", "src": "Pad Thai noin 25 minuuttia\nSatay Kana noin 35 minuuttia\nTom Yum Goong noin 30 minuuttia" }
             ],
-            "img": "https://media.eggs.ca/assets/RecipePhotos/_resampled/FillWyIxMjgwIiwiNzIwIl0/Fluffy-Pancakes-New-CMS.jpg",
+            "img": "/images/padthai.jpg",
             "classifications": ["thai"],
             "categories": ["eksoottinen", "arki", "nopea", "halpa", "perusteet", "thai-ruoka", "pad thai", "satay kana", "tom yum goong"]
         }
@@ -367,11 +372,68 @@
             "parentId": "thaialkeet1",
             "pageNumber": "1",
             "content": [
-                { "type": "subtitle", "src": "Osa 1" },
-                { "type": "video", "src": "https://www.youtube.com/watch?v=I6uQL6pAUWk" },
-                { "type": "desc", "src": "Step 1. boil pasta" },
-                { "type": "timer", "src": "5" },
-                { "type": "desc", "src": "Step 2. boil more pasta" }
+                { "type": "subtitle", "src": "Raaka-aineet" },
+                { "type": "desc", "src": "Aloitetaan Pad Thain tekeminen perehtymällä siinä tarvittaviin raaka-aineisiin.\nAlla olevalta videolta löydät lyhyen esittelyn raaka-aineista." },
+                { "type": "subtitle2", "src": "Ainesten esittely-video:" },
+                { "type": "video", "src": "https://youtu.be/KIjZLfbbb94" },
+                { "type": "desc", "src": "Pad Thain valmistukseen tarvittavat raaka-aineet löytää tavallisista ruokakaupoista. Alla on muistilista videossa käytetyistä tuotteista." },
+                { "type": "subtitle4", "src": "Ostoslista (6 annosta):" },
+                { "type": "list", "src": ["350 g kanaa, tofua tai katkarapua", "2 kananmunaa", "1 kevätsipuli", "2 valkosipulin kynttä", "1 paprika", "7 rkl tummaa sokeria", "Paketti riisinuudeleita (130g)", "100g Pavun ituja",
+                    "40g pähkinöitä", "7 rkl  kalakastike", "1 kevätsipuli", "3 porkkanaa", "3 limeä", "1 valkosipuli", "1 korianteri", "1 paprika", "7 rkl soijakastiketta", "5 rkl riisiviinietikkaa", "Oliiviöljyä paistamiseen"]},
+                { "type": "subtitle4", "src": "Valinnainen:" },
+                { "type": "list", "src": ["1 chili", "Pippurijauhe", "Paprikajauhe"] },
+                { "type": "subtitle4", "src": "Ravintoarvot (per annos):" },
+                { "type": "list", "src": ["Kalorit: 707 Kcal", "Proteiinit: 56g", "Hiilihydraatit: 79g", "Rasvat:  19g"] }
+            ]
+        },
+        {
+            "id": "padthai1page2",
+            "parentId": "thaialkeet1",
+            "pageNumber": "2",
+            "content": [
+                { "type": "subtitle", "src": "Valmistelu" },
+                { "type": "desc", "src": "Ennen kuin aloitetaan itse ruoanlaitto, niin alla olevilta videoilta löytyy vinkkejä helpottamaan Pad Thain valmistusta." },
+                { "type": "subtitle2", "src": "Leikkaustekniikka:" },
+                { "type": "video", "src": "https://youtu.be/KIjZLfbbb94" },
+                { "type": "subtitle2", "src": "Kokkausvinkki:" },
+                { "type": "video", "src": "https://youtu.be/st1aUARMyRU" },
+                { "type": "subtitle4", "src": "Ohjeet:" },
+                { "type": "desc", "src": "1. Kasvisten peseminen\n2. Kasvisten pilkkominen\n\ta. Porkkanat ja paprika ohuiksi noin 10 cm siivuiksi\n\tb. Ruohosipuli noin 5 cm siivuiksi\n\tc. Valkosipuli mahdollisimman pieneksi (voi käyttää esimerkiksi valkosipulipuristinta).\n3. Vesi kiehumaan nuudeleita varten\n4. Kanan tai tofun pilkkominen\n\ta. Leikkaa pieniksi suikaleiksi\n5. Sekoita kananmunat keskenään kulhossa\n\ta. Riko kananmunat kulhoon ja sekoita, kunnes ne ovat täysin sekoittuneet keskenään."}
+            ]
+        },
+        {
+            "id": "padthai1page3",
+            "parentId": "thaialkeet1",
+            "pageNumber": "3",
+            "content": [
+                { "type": "subtitle", "src": "Wokkaaminen" },
+                { "type": "desc", "src": "Seuraavaksi aloitetaan wokkaaminen. Tässä vaiheessa sinulla pitäisi olla kaikki ainesosat valmiina menemään pannulle, kastiketta ja nuudeleita lukuunottamatta. Kastikkeen osat (sokeri, kalakastike, soijakastike, riisiviinietikka, lime) ja kastikeastia kannattaa olla nopeasti saatavilla, jotta pystyt tekemään kastikkeen samalla kun wokkaat. Alta olevalta videolta voit nähdä, kuinka me toteutimme tämän vaiheen ruoasta!" },
+                { "type": "video", "src": "https://youtu.be/xpm2XEcx7CE" },
+                { "type": "subtitle4", "src": "Ohjeet:" },
+                { "type": "desc", "src": "1. Lämmitä pannu kuumaksi ja pistä pannulle öljyä. Lisää kuumalle pannulle kanat. Paista kanoja siihen asti, että palat ovat saaneet joka puolelle kevyen kultaiset paistopinnat. Halutessasi voit lisätä kanojen päälle mausteita, kuten pippurijauhetta tai paprikajauhetta. Tämän jälkeen nosta kanat pois pannulta." },
+                { "type": "desc", "src": "2. Kanojen paistuessa ehdit tehdä kastikkeen. Kastike kannattaa tehdä pieneen kulhoon. Sekoita ensin keskenään soija, valkoviinietikka ja kalakastike. Tämän jälkeen lisää joukkoon tummasokeri sekä purista kaksi limeä." },
+                { "type": "desc", "src": "3. Lisää öljyä tarvittaessa lisää pannulle ja paista kasvikset (valkosipuli, paprikat, porkkanat ja kevätsipuli). Paista noin 3 minuuttia." },
+                { "type": "desc", "src": "4. Kasvisten paistuessa lisää nuudelit kiehuvaan veteen. On hyvin tärkeää, että nuudeleita keitetään vain maksimissaan 3 minuuttia, joten laita ajastin päälle. Kun 3 minuuttia on kulunut, poista ylimääräinen vesi kaatamalla nuudelit lävikön läpi." },
+                { "type": "desc", "src": "5. Tämän jälkeen lisää kananmunat pannulle. Tee ensin pannulla kasvisten keskelle aukko. Lisää kananmunaseos aukkoon ja sekoita sitä, jotta muna ei hyydy yhdeksi isoksi palaksi. Paista ensin munaa noin 1-2 minuuttia pannun keskellä, jonka jälkeen voit sekoittaa kasvikset munan kanssa. Tämä johtuu siitä, että kananmunaan halutaan paistopintaa." },
+                { "type": "desc", "src": "6. Lisää pannulle kanat ja sekoita ne kasvisten kanssa. Kun nuudelit ovat valmiita, lisää myös ne mukaan." },
+                { "type": "desc", "src": "7. Viimeisenä voit lisätä kastikkeen. Kastike kannattaa sekoittaa wokkiin kunnolla, jotta wokkista tulee kauttaaltaan maukasta. Anna ainesten hautua noin 5 minuuttia pannulla, jotta maut ehtivät sekoittua keskenään" }
+            ]
+        },
+        {
+            "id": "padthai1page4",
+            "parentId": "thaialkeet1",
+            "pageNumber": "4",
+            "content": [
+                { "type": "subtitle", "src": "Viimeistely" },
+                { "type": "desc", "src": "Ruoan maustaminen ja viimeistely lopussa on yksi tärkeimmistä vaiheista ruoanlaitossa! Alta olevalta videolta löydät ohjeet ruoan viimeistelyyn" },
+                { "type": "subtitle2", "src": "Loppukaneetit:" },
+                { "type": "video", "src": "https://youtu.be/aeHeezjETVQ" },
+                { "type": "subtitle4", "src": "Ohjeet:" },
+                { "type": "desc", "src": "1. Leikkaa lime ohuiksi viipaleiksi ja lisää ruokaan" },
+                { "type": "desc", "src": "2. Lisää pavunidut, korianteri ja cashew-pähkinät." },
+                { "type": "desc", "src": "3. Maista ruokaa ja lisää tarvittaessa chiliä tai kastiketta (soija, tummasokeri, kalakastike, valkoviinietikka)" },
+                { "type": "subtitle2", "src": "Seuraavaksi pääset nauttimaan ruoasta! Kiitos seurasta ja ensi kertaan. " },
+                { "type": "desc", "src": "Seuraavassa jaksossa päästään tekemään Satay-kanaa. Opit tekemään satay-kastiketta, joka sopii monien erilaisten raaka-aineiden kanssa yhteen. Satay-ruuat ovatkin merkittävä osa thairuokaa." }
             ]
         }
     ],
