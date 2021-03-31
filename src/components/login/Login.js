@@ -1,6 +1,14 @@
+import React, { useState } from 'react';
+import RegistrationModal from '../registrationmodal/RegistrationModal'
 import './Login.css'
 
+
 function Login({userLogin}) {
+    const [showModal, setShowModal] = useState(false)
+    const closeModal = () => {
+        setShowModal(false)
+    }
+
     return (
         <>
             <div className="content">
@@ -13,8 +21,10 @@ function Login({userLogin}) {
                             userLogin()
                         }}
                     > Login </button>
+                    <button type="button" className="reg btn btn-green" onClick={() => setShowModal(true)}>Rekisteröidy</button>
                 </div>
             </div>
+            { showModal ? <RegistrationModal close={closeModal} userLogin={userLogin}/> : null }
         </>
     )
 }

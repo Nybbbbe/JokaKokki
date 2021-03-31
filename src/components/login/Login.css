@@ -21,6 +21,15 @@
     font-weight: 600;
 }
 
+.btn {
+    display: block;
+    margin: 0 auto;
+}
+
+.reg {
+    margin-top: 5px;
+}
+
 .login-text {
     color: #FFFFFF;
     padding: 1rem;

@@ -79,7 +79,7 @@
         },
         {
             "id": "8",
-            "title": "Thai-ruokien alkeet",
+            "title": "★ Thai-ruokien alkeet",
             "price": "2.99",
             "description": [
                 { "type": "subtitle", "src": "Tällä kurssilla hyppäät meidän kanssa junaan kohti Thai-ruokien saloja. Alta löydät kurssin perustiedot, esittelyvideon, ohjeet kurssin suorittamiseen sekä lisätiedot."},
@@ -465,7 +465,7 @@
         {
             "id": "group5",
             "class": "thai",
-            "title": "Thai-ruoat",
+            "title": "★ Thai-ruoat",
             "img": "https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/00/a0000460/img/basic/a0000460_main.jpg?20170412181434&q=80&rw=750&rh=536"
         }
     ],
