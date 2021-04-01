@@ -1,6 +1,16 @@
 .modal {
     display: block;
     position: fixed;
+    overflow: auto;
+}
+
+.form-saver {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-saver > * {
+    margin-bottom: 0.5rem;
 }
 
 .close {

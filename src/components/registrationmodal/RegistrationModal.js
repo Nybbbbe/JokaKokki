@@ -11,20 +11,26 @@ const RegistrationModal = ({close, userLogin}) => {
                         <h5 className="modal-title">Rekisteröidy</h5>
                     </div>
                     <div className="modal-body">
-                        <form>
-                          <label htmlFor="fname">Nimi:</label><br/>
-                          <input type="text" id="fname" name="fname"/><br/>
-                          <label htmlFor="email">Sähköposti:</label><br/>
+                        <form className="form-saver">
+                          <label htmlFor="fname">Nimi:</label>
+                          <input type="text" id="fname" name="fname"/>
+                          <label htmlFor="email">Sähköposti:</label>
                           <input type="email" id="email" name="email"/>
-                          <label htmlFor="pw">Salasana:</label><br/>
-                          <input type="password" id="pw" name="pw"/><br/><br/>
-                          <p>Tykkäätkö:</p>
-                          <input type="checkbox" name="thai"/>
-                          <label className="clabel" htmlFor="thai">Thai ruoasta?</label><br/>
-                          <input type="checkbox" name="brunssi"/>
-                          <label className="clabel" htmlFor="brunssi">Brunsseista?</label><br/>
-                          <input type="checkbox" name="pasta"/>
-                          <label className="clabel" htmlFor="pasta">Pastasta?</label><br/>
+                          <label htmlFor="pw">Salasana:</label>
+                          <input type="password" id="pw" name="pw"/><br/>
+                          <h3>Tykkäätkö:</h3>
+                          <div>
+                            <input type="checkbox" name="thai"/>
+                            <label className="clabel" htmlFor="thai">Thai ruoasta?</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="brunssi"/>
+                            <label className="clabel" htmlFor="brunssi">Brunsseista?</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="pasta"/>
+                            <label className="clabel" htmlFor="pasta">Pastasta?</label>
+                          </div>
                         </form>
                     </div>
                     <div className="modal-footer">
